@@ -5,8 +5,9 @@ import { BsXLg } from "react-icons/bs"
 import {FaBars} from 'react-icons/fa'
 import { Show, Hide } from '@chakra-ui/react'
 import Logo from "../asset/Logo.JPG"
-import {FiHeart}from "react-icons/fi"
-import {BiShoppingBag} from "react-icons/bi"
+import {FiHeart, FiTruck}from "react-icons/fi"
+import {BiShoppingBag, BiStore} from "react-icons/bi"
+import {HiCursorClick} from "react-icons/hi"
 const Navbar=() => {
   const [showSmNav, setShowSmNav] = useState(false)
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -21,15 +22,33 @@ const Navbar=() => {
 } = useDisclosure()
   return (
     <>
-    <Box w={"100%"} boxShadow={"md"} mx="auto" height={'40px'} bgColor='blackAlpha.900'>
+     { showSmNav?" ":
+    <Flex  w={"100%"} boxShadow={"md"} mx="auto" height={'40px'} bgColor='blackAlpha.900' justifyContent={'space-between'}>
       <Flex align={["flex-start","flex-start","flex-start","center"]} px={["30px","30px","50px","30px"]} gap ="25px" py={"10px"} justify={"flex-start"} direction={["column", "column","column","row"]}>
+       <FiTruck color='white' size='25px'/>
+       <Text color={'whiteAlpha.900'}>Free Shipping</Text>
+       <BiStore color='white' size='25px'/><Box marginLeft={'-30px'}><HiCursorClick color='white' size='15px'/></Box>
+       <Text color={'whiteAlpha.900'}>Click and Collect</Text>
+       <BiStore color='white' size='25px'/><Box marginLeft={'-30px'}><HiCursorClick color='white' size='15px'/></Box>
+       <Text color={'whiteAlpha.900'}>Return To Store</Text>
         </Flex>
-        </Box>
+       
+        <Flex  direction={["column", "column","column","row"]} px={["30px","30px","50px","30px"]} gap ="25px" py={"10px"} justify={"flex-end"}>
+            
+        <Text color={'whiteAlpha.900'} fontWeight="600">Download Our App</Text>
+        <Text color={'whiteAlpha.900'} fontWeight="600">|</Text>
+        <Text color={'whiteAlpha.900'} fontWeight="600"  >Store collector</Text>
+        <Text color={'whiteAlpha.900'} fontWeight="600">|</Text>
+        <Text color={'whiteAlpha.900'} fontWeight="600">Help</Text>
+        </Flex>
+        
+        </Flex>
+        }
     <Box w={"100%"} boxShadow={"md"} mx="auto" height={'100px'}>
       <Flex align={["flex-start","flex-start","flex-start","center"]} px={["30px","30px","50px","30px"]} gap ="25px" py={"10px"} justify={"flex-start"} direction={["column", "column","column","row"]}>
         <Flex justifyContent={"space-between"} align={"center"}  w={["100%","100%","100%","10%"]}>
         <Link to='/'>
-            <Image  src={Logo} alt='ImageNAvbar'  w={["40%","30%","20%","80%"]}/>
+            <Image  src={Logo} alt='ImageNAvbar'  w={["30%","20%","20%","80%"]}/>
         </Link>
         <Show breakpoint='(max-width: 991px)' >
             <Box _hover={{cursor:"pointer"}} >
@@ -41,6 +60,7 @@ const Navbar=() => {
         </Show>
         </Flex>
         <Flex fontSize={'15px'} display={[showSmNav?"flex":"none",showSmNav?"flex":"none",showSmNav?"flex":"none", "flex"]} align={"center"} direction={["column","column","column","row"]} gap="25px" width={["100%","100%","100%","90%"]}>
+          <br />
           <Link to='/mens'>
           <Text _hover={{textDecoration:"none", color:"#ffa500"}} fontWeight="600"> Mens</Text>
           </Link>
@@ -68,22 +88,34 @@ const Navbar=() => {
           {/* <Text colorScheme={"twitter"}  _hover={{bg:"#03A9F4", color:"#FFF"}} py={"10px"} px={"15px"} border={"1px solid black"}> SIGNUP FREE</Text> */}
           <Text onClick={onOpenModal} _hover={{textDecoration:"none", color:"#ffa500"}} fontWeight="600"> SignUp/SignIn</Text>
           </Link>
-          <Modal isOpen={isOpenModal} size={'xl'} onClose={onCloseModal}>
+          <Modal isOpen={isOpenModal} style={{height:'1000px'}} size={['sm','md','xl']} onClose={onCloseModal} >
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader><h1>Sign up or Sign in</h1></ModalHeader>
+        <br /> <br /> <br />
+          <ModalHeader>
+            <Text paddingLeft={['20px','40px','60px']} paddingRight={['20px','40px','60px']} fontWeight="400" fontSize={['20px','30px','40px']}>Sign up or Sign in</Text>
+            <Text fontSize={'12px'} fontWeight="300" color={'grey'} paddingLeft={['20px','40px','60px']} paddingRight={['20px','40px','60px']} >Enjoy the convenience of a single account across all participating brands</Text>
+            </ModalHeader>
           <ModalCloseButton />
-          <ModalBody>
-            <Input placeholder="enter email"  style={{marginBottom:'20px'}}/>
-            <Input placeholder="enter password" />
+          <ModalBody paddingLeft={['20px','50px','80px']} paddingRight={['20px','50px','80px']}>
+            <Text >Mobile Number</Text>
+            <Flex border={'1px solid #d3d3d3'} height={['19px','29px','40px']}>
+            <Text marginTop={['1px','6px','8px']} fontSize={['8px','10px','15px']}>+91</Text>
+            <Text marginTop={['-2px','-4px','-6px']} marginLeft={['3px','3px','5px']}fontSize={['12px','20px','30px']}color='#d3d3d3'>|</Text>
+            <Input height={['15px','29px','40px']} type="number" aria-describedby="emailHelp" placeholder="Mobile Number" border={'none'} focusBorderColor='none'/>
+            </Flex>
           </ModalBody>
-          <ModalFooter>
-            <Button variant='ghost'>Submit</Button>
+          <Text fontSize={['7px','7px','10px']} paddingLeft={['20px','50px','80px']} >By creating your account you agree to our<a style={{color:'#faa619'}} href=''>{'  '}Terms and condition</a> </Text>
+          <br /> <br />
+          <ModalFooter paddingRight={['30px','50px','70px']}>
+           
+          <Button bgColor='#faa619' width={['250px']} _hover={{bgColor:'#ffc87c'}}>Continue</Button>
           </ModalFooter>
+          <br /> <br /> <br />
         </ModalContent>
       </Modal>
-          <FiHeart />
-          <BiShoppingBag />
+          <FiHeart size='25px'/>
+          <BiShoppingBag size='25px'/>
           </Flex>
         </Flex>
       </Flex>
