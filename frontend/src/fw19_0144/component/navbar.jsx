@@ -22,7 +22,7 @@ const Navbar=() => {
 } = useDisclosure()
   return (
     <>
-     { showSmNav?" ":
+     {/* { showSmNav?" ": */}
     <Flex  w={"100%"} boxShadow={"md"} mx="auto" height={'40px'} bgColor='blackAlpha.900' justifyContent={'space-between'}>
       <Flex align={["flex-start","flex-start","flex-start","center"]} px={["30px","30px","50px","30px"]} gap ="25px" py={"10px"} justify={"flex-start"} direction={["column", "column","column","row"]}>
        <FiTruck color='white' size='25px'/>
@@ -43,12 +43,12 @@ const Navbar=() => {
         </Flex>
         
         </Flex>
-        }
-    <Box w={"100%"} boxShadow={"md"} mx="auto" height={'100px'}>
+        {/* } */}
+    <Box bgColor={'#dcdcdc '} style={{position:'sticky',zIndex:'10',top:'-5px'}} w={"100%"} boxShadow={"md"} mx="auto" height={['100px']}>
       <Flex align={["flex-start","flex-start","flex-start","center"]} px={["30px","30px","50px","30px"]} gap ="25px" py={"10px"} justify={"flex-start"} direction={["column", "column","column","row"]}>
-        <Flex justifyContent={"space-between"} align={"center"}  w={["100%","100%","100%","10%"]}>
+        <Flex justifyContent={"space-between"} align={"center"}  w={["100%","100%","80%","10%"]}>
         <Link to='/'>
-            <Image  src={Logo} alt='ImageNAvbar'  w={["30%","20%","20%","80%"]}/>
+            <Image  src={Logo} alt='ImageNAvbar'  w={["30%","20%","20%","70%"]} borderRadius='40px' paddingTop={'-35px'}/>
         </Link>
         <Show breakpoint='(max-width: 991px)' >
             <Box _hover={{cursor:"pointer"}} >
