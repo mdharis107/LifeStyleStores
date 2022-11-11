@@ -6,8 +6,8 @@ const beautyRouter = Router();
 
 beautyRouter.get("/",getBeautyProducts);
 
-beautyRouter.get("/:womensId",getBeautyProductById);
+beautyRouter.get("/:beautyId",getBeautyProductById);
 
-beautyRouter.post("/addwomensProduct",postBeautyProducts);
+beautyRouter.post("/addBeautyProduct",postBeautyProducts);
 
 module.exports = {beautyRouter};

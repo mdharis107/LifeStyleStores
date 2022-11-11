@@ -4,6 +4,7 @@ const {connection} = require("./config/db");
 
 const {womensRouter} = require("./Routes/womens.router");
 const {beautyRouter} = require("./Routes/beauty.router")
+const {kidRouter} = require("./Routes/kids.router")
 
 const app = express();
 app.use(express.json());
@@ -18,6 +19,8 @@ app.get("/",(req,res)=>{
 app.use("/womens",womensRouter);
 
 app.use("/beauty",beautyRouter);
+
+app.use("/kid",kidRouter);
 
 app.listen(8080,async ()=>{
     try{
