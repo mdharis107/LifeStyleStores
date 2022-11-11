@@ -3,6 +3,7 @@ const express = require('express');
 const {connection} = require("./config/db");
 
 const {womensRouter} = require("./Routes/womens.router");
+const {beautyRouter} = require("./Routes/beauty.router")
 
 const app = express();
 app.use(express.json());
@@ -16,6 +17,7 @@ app.get("/",(req,res)=>{
 
 app.use("/womens",womensRouter);
 
+app.use("/beauty",beautyRouter);
 
 app.listen(8080,async ()=>{
     try{
