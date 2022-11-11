@@ -1,10 +1,12 @@
 import './App.css';
-import MainRoutes from './Components/MainRoutes';
+import { BeautyHomePage } from './Pages/BeautyHome/BeautyHomePage';
+
+
 
 function App() {
   return (
     <div className="App">
-      <MainRoutes/>
+      <BeautyHomePage/>
     </div>
   );
 }
