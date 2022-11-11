@@ -2,6 +2,9 @@ import React, {useState} from 'react'
 
 const Eachproduct = ({item,id}) => {
     const [btn,setBtn] = useState("btn");
+    const handleClick=()=>{
+      console.log(item);
+    }
   return (
     <div>
         <div key={id} className="container" onMouseEnter={(e)=>setBtn("btnshow")} onMouseLeave={(e)=>setBtn("btn")}>
@@ -15,7 +18,7 @@ const Eachproduct = ({item,id}) => {
                <s style={{fontSize:"12px"}}>₹{item.price}</s>
              </div>
              <p>{item.product}</p>
-             <button className={btn}>ADD TO BASKET</button>
+             <button className={btn} onClick={()=>handleClick()} > ADD TO BASKET</button>
         </div>
     </div>
   )
