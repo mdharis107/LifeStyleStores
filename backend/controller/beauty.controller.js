@@ -17,7 +17,7 @@ const getBeautyProducts = async (req,res)=>{
 			sortBy[sort[0]] = "asc";
 		}
 
-		const beauty = await Beauty.find({ name: { $regex: search, $options: "i" } })
+		const beauty = await Beauty.find({ productName: { $regex: search, $options: "i" } })
 			.sort(sortBy)
 			.skip(page * limit)
 			.limit(limit);
