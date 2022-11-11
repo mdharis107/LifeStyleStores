@@ -1,12 +1,18 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import {useSelector,useDispatch} from "react-redux";
+import {updateSingleProduct} from "../Redux/SingleProduct/action";
+import { useNavigate } from "react-router-dom"
 
 const Eachproduct = ({item,id}) => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
     const [btn,setBtn] = useState("btn");
     const handleClick=()=>{
-      console.log(item);
+      dispatch(updateSingleProduct(item));
+      navigate("/SingleProduct")
     }
   return (
-    <div>
+    <div onClick={()=>handleClick()}>
         <div key={id} className="container" onMouseEnter={(e)=>setBtn("btnshow")} onMouseLeave={(e)=>setBtn("btn")}>
              <img src={item.image} alt="" />
              <div className="off">
@@ -18,7 +24,7 @@ const Eachproduct = ({item,id}) => {
                <s style={{fontSize:"12px"}}>₹{item.price}</s>
              </div>
              <p>{item.product}</p>
-             <button className={btn} onClick={()=>handleClick()} > ADD TO BASKET</button>
+             <button className={btn}  > ADD TO BASKET</button>
         </div>
     </div>
   )

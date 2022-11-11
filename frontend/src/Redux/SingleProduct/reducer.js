@@ -10,6 +10,6 @@ export const reducer = (state=initState,action)=>{
         case types.SINGLE_PRODUCT:
             return {...state,data:payload};
         default:
-            return {...state,data:{}};
+            return {...state};
     }
 }
