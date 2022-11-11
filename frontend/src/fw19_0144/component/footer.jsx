@@ -11,8 +11,8 @@ const Footer = () => {
                 <Text  fontWeight={'700'} fontSize='30px' >Subscribe to our awesome emails.</Text>
                 <Text fontWeight={'200'} color='grey'>Get our latest offers and news straight in your inbox.</Text>
             <Flex w={"80%"} paddingTop={"20px"} mx="auto"  direction={["column", "column", "row", "row"]}>
-           <Input placeholder='Please enter email address' w={["15%","20%","20%","95%"]} height='50px' paddingRight={'15px'} borderRadius='0px'/>
-           <Button height={'50px'} w={['30px','200px']} bgColor='blackAlpha.900' color={'whiteAlpha.900'} _hover={{bgColor:'none'}}>Subscribe</Button>
+           <Input placeholder='Please enter email address' w={["70%","70%","70%","95%"]} height='50px' paddingRight={'15px'} borderRadius='0px'/>
+           <Button height={'50px'} w={['100px','200px']} bgColor='blackAlpha.900' color={'whiteAlpha.900'} _hover={{bgColor:'none'}}>Subscribe</Button>
             </Flex>
             </Box>
             <Box w={['30%']}>
@@ -33,10 +33,10 @@ const Footer = () => {
             </Flex>
             </Box>
             </Flex>
-            <Box w={"100%"} paddingTop={"20px"} >
+            <Box w={"100%"} paddingTop={"20px"} margin={'auto'}>
                 <Flex w={"100%"}  justify={"left"} direction={["column", "column", "row", "row"]}>
-                    <Flex justify={"left"} width={"100%"} wrap={"wrap"} gap={"5px"}>
-                        <Flex  w={["45%","45%","20%","15%"]} align={"left"} gap={"5px"} direction={"column"} >
+                    <Flex justify={"left"} width={"100%"} wrap={"wrap"} gap={"25px"}>
+                        <Flex w={["45%","45%","20%","15%"]} align={"left"} gap={"5px"} direction={"column"} >
                             <Text fontWeight={"bold"}>Women</Text>
                             <Text>Tops</Text>
                             <Text>Ethnicware</Text>

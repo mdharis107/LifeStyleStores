@@ -1,5 +1,5 @@
-import { Box, Flex, Image, Text, Button, Input, useDisclosure, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, Modal, ModalFooter } from '@chakra-ui/react';
-import {Link, useNavigate} from 'react-router-dom'
+import { Box, Flex, Image, Text, Button, Input, useDisclosure, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, Modal, ModalFooter, Alert } from '@chakra-ui/react';
+import {Form, Link, useNavigate} from 'react-router-dom'
 import {useState} from 'react'
 import { BsXLg } from "react-icons/bs"
 import {FaBars} from 'react-icons/fa'
@@ -8,18 +8,39 @@ import Logo from "../asset/Logo.JPG"
 import {FiHeart, FiTruck}from "react-icons/fi"
 import {BiShoppingBag, BiStore} from "react-icons/bi"
 import {HiCursorClick} from "react-icons/hi"
+import Otp from './otp';
+import OTPInput, { ResendOTP } from "otp-input-react";
 const Navbar=() => {
   const [showSmNav, setShowSmNav] = useState(false)
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [isShown, setIsShown] = useState(false);
   const [email,setEmail]=useState("")
    const [password,setPassword]=useState("")
- 
+   const [error, setError] = useState("");
+   const [number, setNumber] = useState([]);
+   const [flag, setFlag] = useState(false);
+   const [otp, setOtp] = useState("");
+   const [result, setResult] = useState("");
+   const [OTP, setOTP] = useState("");
    const navigate=useNavigate()
   const { 
     isOpen: isOpenModal, 
     onOpen: onOpenModal, 
     onClose: onCloseModal 
 } = useDisclosure()
+
+
+
+const [otpModal,setOtpModal]=useState(true)
+const handleClick=()=>{
+     setOtpModal(false)
+    console.log("otp",otpModal)
+    console.log(number);
+    setError("");
+    if (number === "" || number.length>10||number.length<10)
+      return setError("Please enter a valid phone number!");
+
+ }
+   
   return (
     <>
      {/* { showSmNav?" ": */}
@@ -86,11 +107,11 @@ const Navbar=() => {
             {/* _hover={{textDecoration:"none", color:"#03A9F4"}}  textDecoration={"none"} */}
           <Link   to='/signup'>
           {/* <Text colorScheme={"twitter"}  _hover={{bg:"#03A9F4", color:"#FFF"}} py={"10px"} px={"15px"} border={"1px solid black"}> SIGNUP FREE</Text> */}
-          <Text onClick={onOpenModal} _hover={{textDecoration:"none", color:"#ffa500"}} fontWeight="600"> SignUp/SignIn</Text>
+          <Text onClick={onOpenModal}  _hover={{textDecoration:"none", color:"#ffa500"}} fontWeight="600"> SignUp/SignIn</Text>
           </Link>
           <Modal isOpen={isOpenModal} style={{height:'1000px'}} size={['sm','md','xl']} onClose={onCloseModal} >
         <ModalOverlay />
-        <ModalContent>
+        {otpModal?(<ModalContent>
         <br /> <br /> <br />
           <ModalHeader>
             <Text paddingLeft={['20px','40px','60px']} paddingRight={['20px','40px','60px']} fontWeight="400" fontSize={['20px','30px','40px']}>Sign up or Sign in</Text>
@@ -98,21 +119,48 @@ const Navbar=() => {
             </ModalHeader>
           <ModalCloseButton />
           <ModalBody paddingLeft={['20px','50px','80px']} paddingRight={['20px','50px','80px']}>
+          {error && <Alert>{error}</Alert>}
             <Text >Mobile Number</Text>
             <Flex border={'1px solid #d3d3d3'} height={['19px','29px','40px']}>
             <Text marginTop={['1px','6px','8px']} fontSize={['8px','10px','15px']}>+91</Text>
             <Text marginTop={['-2px','-4px','-6px']} marginLeft={['3px','3px','5px']}fontSize={['12px','20px','30px']}color='#d3d3d3'>|</Text>
-            <Input height={['15px','29px','40px']} type="number" aria-describedby="emailHelp" placeholder="Mobile Number" border={'none'} focusBorderColor='none'/>
+            <Input
+              onChange={setNumber} height={['15px','29px','40px']} type="number" aria-describedby="emailHelp" placeholder="Mobile Number" border={'none'} focusBorderColor='none'/>
             </Flex>
           </ModalBody>
           <Text fontSize={['7px','7px','10px']} paddingLeft={['20px','50px','80px']} >By creating your account you agree to our<a style={{color:'#faa619'}} href=''>{'  '}Terms and condition</a> </Text>
           <br /> <br />
           <ModalFooter paddingRight={['30px','50px','70px']}>
            
-          <Button bgColor='#faa619' width={['250px']} _hover={{bgColor:'#ffc87c'}}>Continue</Button>
+          <Button bgColor='#faa619' width={['250px']} _hover={{bgColor:'#ffc87c'}} onClick={handleClick} >Continue</Button>
+         
           </ModalFooter>
           <br /> <br /> <br />
-        </ModalContent>
+        </ModalContent>):(   <ModalContent>
+    <br /> <br /> <br />
+      <ModalHeader>
+        <Text paddingLeft={['20px','40px','60px']} paddingRight={['20px','40px','60px']} fontWeight="400" fontSize={['20px','30px','40px']}>Enter OTP SENT to your Phone</Text>
+        <Text fontSize={'12px'} fontWeight="300" color={'grey'} paddingLeft={['20px','40px','60px']} paddingRight={['20px','40px','60px']} >Enjoy the convenience of a single account across all participating brands</Text>
+        </ModalHeader>
+      <ModalCloseButton />
+      <ModalBody paddingLeft={['20px','50px','80px']} paddingRight={['20px','50px','80px']}>
+        <Text >ENTER OTP</Text>
+        <Box height={['19px','29px','40px']}>
+        {/* <Text marginTop={['1px','6px','8px']} fontSize={['8px','10px','15px']}>+91</Text>
+        <Text marginTop={['-2px','-4px','-6px']} marginLeft={['3px','3px','5px']}fontSize={['12px','20px','30px']}color='#d3d3d3'>|</Text> */}
+        <OTPInput value={OTP} onChange={setOTP} autoFocus OTPLength={4} otpType="number" disabled={false} secure  />
+      <ResendOTP onResendClick={() => console.log("Resend clicked")} />
+        </Box>
+      </ModalBody>
+      {/* <Text fontSize={['7px','7px','10px']} paddingLeft={['20px','50px','80px']} >By creating your account you agree to our<a style={{color:'#faa619'}} href=''>{'  '}Terms and condition</a> </Text> */}
+      <br /> <br />
+      <ModalFooter paddingRight={['30px','50px','70px']}>
+       
+      <Button bgColor='#faa619' width={['250px']} _hover={{bgColor:'#ffc87c'}} >Continue</Button>
+     
+      </ModalFooter>
+      <br /> <br /> <br />
+    </ModalContent>)}
       </Modal>
           <FiHeart size='25px'/>
           <BiShoppingBag size='25px'/>
