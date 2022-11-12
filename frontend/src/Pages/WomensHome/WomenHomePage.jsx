@@ -53,6 +53,12 @@ export const WomenHomePage = () => {
     ],
   };
 
+  useEffect(() => {
+    axios.get("https://lifestylestore-api-.up.railway.app/kids").then((res)=>{
+      console.log(res.data.kid)
+    })
+  }, [])
+
   return (
     <div id={styles.all}>
       <Box p={1} color={"#ffffff"} bg={"#FAA619"}>

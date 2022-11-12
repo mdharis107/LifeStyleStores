@@ -4,12 +4,16 @@ import {useSelector} from "react-redux";
 import Navbar from '../Components/Navbar';
 import { useState } from 'react';
 import {useNavigate} from "react-router-dom"
+// import { ProductsSlider } from '../Components/ProductsSlider';
+// import axios from "axios";
+// import { useEffect } from "react";
 
 const SingleProduct = () => {
     const Item = useSelector((store)=>store.SingleProduct.data);
     const [pin,setPin] = useState("");
     const navigate = useNavigate();
     const [recieve,setReceive] = useState("When will I receive my order?");
+    // const [data,setData] = useState([])
     // console.log(Item)
     const handlecart=()=>{
       navigate("/cart")
@@ -22,6 +26,13 @@ const SingleProduct = () => {
         setReceive("When will I receive my order?")
       }
     }
+
+    // useEffect(() => {
+    //   axios.get("https://lifestylestore-api-.up.railway.app/kids").then((res) => {
+    //     console.log(res.data.kid);
+    //     setData(res.data.kid);
+    //   });
+    // }, []);
   return (
     <div className='wp'>
       <Navbar/>
@@ -98,7 +109,10 @@ const SingleProduct = () => {
             <input style={{border:"1px solid orange",color:"orange",fontWeight:"bold"}} type="submit" value="WRITE A REVIEW" />
           </div>
         </div>
-      </div>  
+      </div>
+      {/* <div>
+        <ProductsSlider data={data} />
+      </div>   */}
     </div>
   )
 }

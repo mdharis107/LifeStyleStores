@@ -1,5 +1,6 @@
 import './App.css';
 import MainRoutes from './Components/MainRoutes';
+import { ProductsSlider } from './Components/ProductsSlider';
 
 
 
@@ -8,6 +9,7 @@ import MainRoutes from './Components/MainRoutes';
 function App() {
   return (
     <div className="App">
+      {/* <ProductsSlider/> */}
       <MainRoutes/>
     </div>
   );
