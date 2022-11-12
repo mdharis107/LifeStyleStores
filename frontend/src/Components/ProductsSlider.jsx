@@ -58,61 +58,67 @@ export function ProductsSlider({data}) {
 //   }, []);
 
   return (
+
     <div>
       <Stack pt={'40px'} pb={'40px'} w={'80%'} m={'auto'}>
         <Slider {...settings}>
-          {data.map((ele) => (
-            <Box  pl={"8px"} pr={"8px"}>
-              <Image position={"relative"} w={"300px"} src={ele.img} alt="" />
-              <Flex
-                fontWeight={"600"}
-                ml={"80px"}
-                mt={"-30px"}
-                position={"absolute"}
-                gap={10}
-                fontSize={"12px"}
-              >
-                <Box
-                  borderRadius={"2px"}
-                  opacity={"0.95"}
-                  p={"5px 8.5px"}
-                  bg={"white"}
-                  color={"black"}
-                >
-                  ONLINE EXCLUSIVE
+          {data.map((ele,index) => {
+            if(index%3==0){
+              return (
+                <Box key={ele._id}  pl={"8px"} pr={"8px"}>
+                  <Image position={"relative"} w={"300px"} src={ele.img} alt="" />
+                  <Flex
+                    fontWeight={"600"}
+                    ml={"80px"}
+                    mt={"-30px"}
+                    position={"absolute"}
+                    gap={10}
+                    fontSize={"12px"}
+                  >
+                    <Box
+                      borderRadius={"2px"}
+                      opacity={"0.95"}
+                      p={"5px 8.5px"}
+                      bg={"white"}
+                      color={"black"}
+                    >
+                      ONLINE EXCLUSIVE
+                    </Box>
+                    <Box
+                      borderRadius={"2px"}
+                      opacity={"0.95"}
+                      p={"5px 8.5px"}
+                      bg={"white"}
+                      color={"black"}
+                    >
+                      {`${ele.discount}% OFF`}
+                    </Box>
+                  </Flex>
+                  <Flex gap={5} alignItems={"center"} pt={12}>
+                    <Box fontSize={"18px"} color={"#242428"}>
+                      {`₹${ele.price}`}
+                    </Box>
+                    <Box
+                      fontSize={"12px"}
+                      color={"rgb(146, 147, 145)"}
+                      textDecoration={"line-through"}
+                    >
+                      {`₹500`}
+                    </Box>
+                  </Flex>
+                  <Box
+                    textAlign={"left"}
+                    fontWeight={"normal"}
+                    fontSize={13}
+                    pt={12}
+                  >
+                    {ele.name}
+                  </Box>
                 </Box>
-                <Box
-                  borderRadius={"2px"}
-                  opacity={"0.95"}
-                  p={"5px 8.5px"}
-                  bg={"white"}
-                  color={"black"}
-                >
-                  {`${ele.discount}% OFF`}
-                </Box>
-              </Flex>
-              <Flex gap={5} alignItems={"center"} pt={12}>
-                <Box fontSize={"18px"} color={"#242428"}>
-                  {`₹${ele.price}`}
-                </Box>
-                <Box
-                  fontSize={"12px"}
-                  color={"rgb(146, 147, 145)"}
-                  textDecoration={"line-through"}
-                >
-                  {`₹500`}
-                </Box>
-              </Flex>
-              <Box
-                textAlign={"left"}
-                fontWeight={"normal"}
-                fontSize={13}
-                pt={12}
-              >
-                {ele.name}
-              </Box>
-            </Box>
-          ))}
+              )
+            }
+          }
+           )}
         </Slider>
       </Stack>
     </div>
