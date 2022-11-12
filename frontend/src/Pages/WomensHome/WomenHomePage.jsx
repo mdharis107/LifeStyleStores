@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "../Styles/WomenHomePage.module.css";
 import { Box, Button, Divider, Grid, Heading, Stack } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
 import { SliderPage } from "./Slider";
 import Slider from "react-slick";
+import axios from "axios"
 
 // const AutoplaySlider = withAutoplay(AwesomeSlider);
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
@@ -124,7 +125,7 @@ export const WomenHomePage = () => {
       </Box>
 
       <Stack m={"auto"} w={"80%"} mt={"500px"}>
-        <Box p={"0 0 56px 0"} borderBottom={"1px solid #ecedeb"}>
+        <Box as={'a'} href={'/womens/products'} p={"0 0 56px 0"} borderBottom={"1px solid #ecedeb"}>
           <Image
             src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-women-9modblock-StripBanner2-D-08Nov2022.jpg"
             alt=""

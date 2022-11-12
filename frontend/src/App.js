@@ -1,4 +1,5 @@
 import './App.css';
+import MainRoutes from './Components/MainRoutes';
 
 
 
@@ -7,7 +8,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      
+      <MainRoutes/>
     </div>
   );
 }
