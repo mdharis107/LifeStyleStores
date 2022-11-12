@@ -108,7 +108,15 @@ export function MenSlider() {
     <div>
       <Slider {...settings}>
         {MensData.map((ele) => (
-          <Box w={"full"} pl={"8px"} pr={"8px"}>
+          <Box
+            _hover={{ outline: "none" }}
+            textDecoration={"none"}
+            as={"a"}
+            href={"/mens/products"}
+            w={"full"}
+            pl={"8px"}
+            pr={"8px"}
+          >
             <Image position={"relative"} w={"300px"} src={ele.img} alt="" />
             <Flex
               fontWeight={"600"}
