@@ -12,6 +12,18 @@ const SingleProduct = () => {
     const [recieve,setReceive] = useState("When will I receive my order?");
     // console.log(Item)
     const handlecart=()=>{
+      const arr = JSON.parse(localStorage.getItem("cart"))
+      let flag = false;
+      arr.map(x=>{
+          if(x._id === Item._id){
+            flag = true;
+          }
+      })
+      if(flag === false){
+        arr.push(Item)
+      }
+      
+      localStorage.setItem("cart",JSON.stringify(arr))
       navigate("/cart")
     }
     const handlebtn=()=>{
