@@ -1,9 +1,22 @@
-import React from 'react'
+import React, {useState,useEffect} from 'react'
 import "../Womens/WomensProducts.css";
 import Navbar from "../../Components/Navbar";
 import arrow from "../Womens/wpassert/arrow.png";
 import Eachproduct from '../../Components/Eachproduct';
+import axios from "axios";
 const MensProducts = () => {
+  const [url,setUrl] = useState("https://lifestylestore-api-.up.railway.app/mens/?page=1&limit=48");
+  const [products,setProducts] = useState([]);
+  useEffect(()=>{
+    axios.get(`${url}`)
+    .then(res=>{
+      const val = res.data.men;
+      setProducts(val)
+    })
+    .catch(e=>{
+      console.log(e)
+    })
+  },[url])
     const category=[
         {
           image:"https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/men-bottoms.jpg",
@@ -46,91 +59,91 @@ const MensProducts = () => {
         }
       ]
       // const [btn,setBtn] = useState("btn")
-      const products=[
-        {
-          gender:"women",
-          category:"Top Wear",
-          image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011315621-Orange-Coral-1000011315621-2022_01-2100.jpg",
-          price:1049,
-          Dprice:734,
-          product:"FAME FOREVER Men Polo T-shirt",
-          Discount:"30% OFF",
-          Soffer:"2 AT 50% OFF",
-          Sdiscount:50
-        },
-        {
-            image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011315621-Orange-Coral-1000011315621-2022_01-2100.jpg",
-            price:1049,
-          Dprice:734,
-          product:"BOSSINI Women Striped Knit Top",
-          Discount:"30% OFF",
-          Soffer:"2 AT 50% OFF",
-          Sdiscount:50
-        },
-        {
-            image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011315621-Orange-Coral-1000011315621-2022_01-2100.jpg",
-            price:1049,
-          Dprice:734,
-          product:"BOSSINI Women Striped Knit Top",
-          Discount:"30% OFF",
-          Soffer:"2 AT 50% OFF",
-          Sdiscount:50
-        },
-        {
-            image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011315621-Orange-Coral-1000011315621-2022_01-2100.jpg",
-            price:1049,
-          Dprice:734,
-          product:"BOSSINI Women Striped Knit Top",
-          Discount:"30% OFF",
-          Soffer:"2 AT 50% OFF",
-          Sdiscount:50
-        },
-        {
-            image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011315621-Orange-Coral-1000011315621-2022_01-2100.jpg",
-            price:1049,
-          Dprice:734,
-          product:"BOSSINI Women Striped Knit Top",
-          Discount:"30% OFF",
-          Soffer:"2 AT 50% OFF",
-          Sdiscount:50
-        },
-        {
-            image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011315621-Orange-Coral-1000011315621-2022_01-2100.jpg",
-            price:1049,
-          Dprice:734,
-          product:"BOSSINI Women Striped Knit Top",
-          Discount:"30% OFF",
-          Soffer:"2 AT 50% OFF",
-          Sdiscount:50
-        },
-        {
-            image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011315621-Orange-Coral-1000011315621-2022_01-2100.jpg",
-            price:1049,
-          Dprice:734,
-          product:"BOSSINI Women Striped Knit Top",
-          Discount:"30% OFF",
-          Soffer:"2 AT 50% OFF",
-          Sdiscount:50
-        },
-        {
-            image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011315621-Orange-Coral-1000011315621-2022_01-2100.jpg",
-            price:1049,
-          Dprice:734,
-          product:"BOSSINI Women Striped Knit Top",
-          Discount:"30% OFF",
-          Soffer:"2 AT 50% OFF",
-          Sdiscount:50
-        },
-        {
-            image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011315621-Orange-Coral-1000011315621-2022_01-2100.jpg",
-            price:1049,
-          Dprice:734,
-          product:"BOSSINI Women Striped Knit Top",
-          Discount:"30% OFF",
-          Soffer:"2 AT 50% OFF",
-          Sdiscount:50
-        },
-      ]
+      // const products=[
+      //   {
+      //     gender:"women",
+      //     category:"Top Wear",
+      //     image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011315621-Orange-Coral-1000011315621-2022_01-2100.jpg",
+      //     price:1049,
+      //     Dprice:734,
+      //     product:"FAME FOREVER Men Polo T-shirt",
+      //     Discount:"30% OFF",
+      //     Soffer:"2 AT 50% OFF",
+      //     Sdiscount:50
+      //   },
+      //   {
+      //       image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011315621-Orange-Coral-1000011315621-2022_01-2100.jpg",
+      //       price:1049,
+      //     Dprice:734,
+      //     product:"BOSSINI Women Striped Knit Top",
+      //     Discount:"30% OFF",
+      //     Soffer:"2 AT 50% OFF",
+      //     Sdiscount:50
+      //   },
+      //   {
+      //       image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011315621-Orange-Coral-1000011315621-2022_01-2100.jpg",
+      //       price:1049,
+      //     Dprice:734,
+      //     product:"BOSSINI Women Striped Knit Top",
+      //     Discount:"30% OFF",
+      //     Soffer:"2 AT 50% OFF",
+      //     Sdiscount:50
+      //   },
+      //   {
+      //       image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011315621-Orange-Coral-1000011315621-2022_01-2100.jpg",
+      //       price:1049,
+      //     Dprice:734,
+      //     product:"BOSSINI Women Striped Knit Top",
+      //     Discount:"30% OFF",
+      //     Soffer:"2 AT 50% OFF",
+      //     Sdiscount:50
+      //   },
+      //   {
+      //       image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011315621-Orange-Coral-1000011315621-2022_01-2100.jpg",
+      //       price:1049,
+      //     Dprice:734,
+      //     product:"BOSSINI Women Striped Knit Top",
+      //     Discount:"30% OFF",
+      //     Soffer:"2 AT 50% OFF",
+      //     Sdiscount:50
+      //   },
+      //   {
+      //       image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011315621-Orange-Coral-1000011315621-2022_01-2100.jpg",
+      //       price:1049,
+      //     Dprice:734,
+      //     product:"BOSSINI Women Striped Knit Top",
+      //     Discount:"30% OFF",
+      //     Soffer:"2 AT 50% OFF",
+      //     Sdiscount:50
+      //   },
+      //   {
+      //       image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011315621-Orange-Coral-1000011315621-2022_01-2100.jpg",
+      //       price:1049,
+      //     Dprice:734,
+      //     product:"BOSSINI Women Striped Knit Top",
+      //     Discount:"30% OFF",
+      //     Soffer:"2 AT 50% OFF",
+      //     Sdiscount:50
+      //   },
+      //   {
+      //       image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011315621-Orange-Coral-1000011315621-2022_01-2100.jpg",
+      //       price:1049,
+      //     Dprice:734,
+      //     product:"BOSSINI Women Striped Knit Top",
+      //     Discount:"30% OFF",
+      //     Soffer:"2 AT 50% OFF",
+      //     Sdiscount:50
+      //   },
+      //   {
+      //       image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011315621-Orange-Coral-1000011315621-2022_01-2100.jpg",
+      //       price:1049,
+      //     Dprice:734,
+      //     product:"BOSSINI Women Striped Knit Top",
+      //     Discount:"30% OFF",
+      //     Soffer:"2 AT 50% OFF",
+      //     Sdiscount:50
+      //   },
+      // ]
   return (
     <div className='wp'>
       <Navbar/>

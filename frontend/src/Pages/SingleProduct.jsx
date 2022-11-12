@@ -27,20 +27,20 @@ const SingleProduct = () => {
       <Navbar/>
       <div className='head'>
         <div>
-          <h1 className='section'>{Item.product}</h1>
+          <h1 className='section'>{Item.productName}</h1>
         </div>
         <div className="catlogue">
           <div className="catImg">
-            <img src={Item.image} alt="" />
+            <img src={Item.img} alt="" />
           </div>
           <div className="catCont">
             <div className="curr">
-              <h2>₹{Item.Dprice}</h2>
+              <h2>₹{Item.price-Item.discount}</h2>
               <p>Inclusive of all taxes</p>
             </div>
             <div className="curr1">
               <s>₹{Item.price}</s>
-              <p>Save ₹{Item.price - Item.Dprice} ({100-Math.round((Item.Dprice/Item.price)*100)}%)</p>
+              <p>Save ₹{Item.discount} ({100-Math.round(((Item.price-Item.discount)/Item.price)*100)}%)</p>
             </div>
             <u>Free shipping on all orders</u> <br />
             <button onClick={handlecart} className='sbtn'>ADD TO BASKET</button>
@@ -80,7 +80,7 @@ const SingleProduct = () => {
             <ul>
               <li>Style : Sports</li>
               <li>Model Wears : Size M, has Height 6'0",Chest 38",and Waist 30"</li>
-              <li>Product : {Item.product}</li>
+              <li>Product : {Item.productName}</li>
               <li>Country of Origin : India</li>
               <li>Manufactured By : Lifestyle International Pvt Ltd, 77 Degree Town Centre, Building No. 3, West Wing ,Off HAL Airport Road, Yamlur, Bangalore-560037</li>
               <li>For Consumer Complaints Contact : Manager Commercial, Lifestyle International Pvt. Ltd. 1800-123-1555</li>

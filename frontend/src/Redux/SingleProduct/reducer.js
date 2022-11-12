@@ -1,7 +1,8 @@
 import * as types from "./actionType";
 
 const initState = {
-    data:{}
+    data:{},
+    cart:[]
 }
 
 export const reducer = (state=initState,action)=>{
@@ -9,6 +10,8 @@ export const reducer = (state=initState,action)=>{
     switch(type){
         case types.SINGLE_PRODUCT:
             return {...state,data:payload};
+        case types.UPDATE_DATA:
+            return {...state,cart:[...payload]}
         default:
             return {...state};
     }
