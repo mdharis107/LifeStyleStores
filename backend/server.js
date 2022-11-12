@@ -9,9 +9,9 @@ const app = express();
 require("dotenv").config();
 
 const {womensRouter} = require("./Routes/womens.router");
-const {beautyRouter} = require("./Routes/beauty.router")
-const {kidRouter} = require("./Routes/kids.router")
-const {ShoesAndBagsRouter} = require("./Routes/shoes&bags.router")
+const {beautyRouter} = require("./Routes/beauty.router");
+const {kidRouter} = require("./Routes/kids.router");
+const {ShoesAndBagsRouter} = require("./Routes/shoes&bags.router");
 const {menRouter} = require("./Routes/mens.router");
 
 let PORT = process.env.PORT || 8500;
