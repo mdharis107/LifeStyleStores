@@ -2,9 +2,21 @@ const express = require('express');
 
 const {connection} = require("./config/db");
 
-const {womensRouter} = require("./Routes/womens.router");
+const cors = require("cors");
 
 const app = express();
+
+require("dotenv").config();
+
+const {womensRouter} = require("./Routes/womens.router");
+const {beautyRouter} = require("./Routes/beauty.router");
+const {kidRouter} = require("./Routes/kids.router");
+const {ShoesAndBagsRouter} = require("./Routes/shoes&bags.router");
+const {menRouter} = require("./Routes/mens.router");
+
+let PORT = process.env.PORT || 8500;
+
+app.use(cors());
 app.use(express.json());
 
 // require("dotenv").config();
@@ -16,14 +28,21 @@ app.get("/",(req,res)=>{
 
 app.use("/womens",womensRouter);
 
+app.use("/beauty",beautyRouter);
 
-app.listen(8080,async ()=>{
+app.use("/kids",kidRouter);
+
+app.use("/ShoesAndBags",ShoesAndBagsRouter);
+
+app.use("/mens",menRouter);
+
+app.listen(PORT,async ()=>{
     try{
         await connection;
-        console.log("Your mongo DataBase is Connected");
+        console.log(`Your mongo DataBase is Connected`);
     }catch(err){
         console.log(err)
     }
-    console.log("Listening on port 8080");
+    console.log(`Listening on port ${PORT}`);
 })
 

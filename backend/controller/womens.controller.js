@@ -1,48 +1,52 @@
 const {Womens} = require("../Model/womens.model");
 
 const getWomensProducts = async (req,res)=>{
-    
-    // const match = {};
-    // const sort = {};
+    // http://localhost:8080/womens/?page=1&limit=10&sort=price,desc
+    try {
+		const page = parseInt(req.query.page) - 1 || 0;
+		const limit = parseInt(req.query.limit) || 5;
+		const search = req.query.search || "";
+		let sort = req.query.sort || "productName";
+		
+		req.query.sort ? (sort = req.query.sort.split(",")) : (sort = [sort]);
 
-    // if(req.query.color === "red"){
-    //     match.color = req.query.color
-    // }
+		let sortBy = {};
+		if (sort[1]) {
+			sortBy[sort[0]] = sort[1];
+		} else {
+			sortBy[sort[0]] = "asc";
+		}
 
-    // if(req.query.sortBy){  
-    //     const str = req.query.sortBy.split(':')
-    //     sort[str[0]] = str[1] === 'desc' ? -1:1
-    // }
-   
-    // try{
-    //     const output = await Womens.find({
-    //         path:"/",
-    //         match,
-    //         options:{
-    //             limit:Number(req.query.limit),
-    //             skip:Number(req.query.skip),
-    //             sort
-    //         }
-    //     })
-    //     // console.log(output);
-    //     res.send(output);
-    // } catch(e){
-    //         res.send(e);
-    // }
+		const womens = await Womens.find({ productName: { $regex: search, $options: "i" } })
+			.sort(sortBy)
+			.skip(page * limit)
+			.limit(limit);
 
+		const total = await Womens.countDocuments({
+			
+			name: { $regex: search, $options: "i" },
+		});
 
-    
+		const response = {
+			error: false,
+			total,
+			page: page + 1,
+			limit,
+			womens,
+		};
 
-    // const output = await Womens.find();
-    // console.log(output);
-    // res.send(output);
+		res.status(200).send(response);
+	} catch (err) {
+		console.log(err);
+		res.status(500).send("Internal Server Error");
+	}
 }
 
 const getWomensProductById = async (req,res) =>{
 
     // console.log(req.params.womensId);
     // here we can find a product by id as well 
-    const result = await Womens.findByOne({_id : req.params.womensId});
+    const result = await Womens.findOne({_id : req.params.womensId});
     res.send(result);
 }
 
