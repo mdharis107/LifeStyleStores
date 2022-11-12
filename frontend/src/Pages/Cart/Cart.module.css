@@ -1,0 +1,234 @@
+/* navbar css */
+.navbar_cart{
+    border: 1px solid black;
+    height: 106px;
+}
+
+/* below navbar start */
+.basket_head{
+    border:1px solid #cfd0cd;
+    width: 1236px;
+    margin: auto;
+    text-align: start;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+}
+.basket_head>h1{
+    font-size: 24px;
+    font-weight: lighter;
+}
+/* product count */
+.product_count{
+    width: 1236px;
+    margin: auto;
+    text-align: start;
+    padding-top: 10px;
+}
+
+.cart_main{
+    width: 1236px;
+    margin: auto;
+    display: flex;    
+}
+.items_div{
+    width: 816px;  
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:10px;
+}
+.price_main{
+    width: 420px;
+    display: grid;
+    row-gap: 5px;
+    
+}
+.price_main2{
+    margin-right: 0px;
+}
+.pin_check{
+    border: 1px solid rgb(231, 228, 228);
+    width: 396px;
+    height: 86px;   
+    margin-left: 20px;
+}
+.pin_check_in{
+   margin-top: 24px;
+}
+.pin_check_in span{
+ margin-right: 15px;  
+ font-size: 14px; 
+ color: #000;
+ font-weight: 500;
+}
+.pin_check_in input{
+    border:1px solid #faa619;
+    height: 36px;
+    width: 176px;
+    border-radius: 7px;
+}
+.pin_check_in button{
+    height: 40px;
+    width: 90px;
+    border:1px solid #faa619;
+    color: #faa619;
+    border-radius: 8px;
+    margin-left: 10px;
+    background-color: #fff;
+}
+.pin_check_in button:hover{
+    cursor: pointer;
+}
+.offer_div{
+    border: 1px solid rgb(231, 228, 228);
+    height: 106px;
+    width: 396px;
+    margin-left: 20px;
+}
+.offer_div2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.offer_img_div img{
+    height: 67px;
+    width: 93px;
+    margin-top: 12px;
+    margin-right: 40px;
+}
+.price_calc{
+    border: 1px solid rgb(231, 228, 228);
+    height: 304px;
+    width: 396px;
+    margin-left: 20px;
+}
+.mrp_div{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 250px;
+    padding: 5px;
+    font-size: 14px;
+}
+.discount_div{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 220px;
+    padding: 5px;
+    font-size: 14px;
+}
+.charge_div{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 210px;
+    padding: 5px;
+    font-size: 14px;
+}
+.total_div{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 255px;
+    padding: 10px;
+    border: 1px solid rgb(231, 228, 228);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.text_offer{
+    margin-top: 20px;    
+}
+.for{
+    text-align: start;
+    font-weight: 600;
+}
+.for1{
+    text-align: start;
+    font-size: 14px;
+    margin-top: 4px;
+    color: grey;
+}
+.out_button button{
+    width: 360px;
+    height: 41px;
+    color: #fff;
+    background-color: #faa619;
+    border: none;
+    font-size: 18px;
+    border-radius: 2px;
+    margin-top: 20px;
+}
+.out_button button:hover{
+    cursor: pointer;
+}
+.final_text{
+   margin-left: 15px;
+   margin-top: 20px;
+   width: 360px;
+   text-align: start;
+   background-color: #efefef;
+   border-radius: 2px;
+   font-size: 14px;
+   
+}
+.item_container{
+    border: 1px solid rgb(231, 228, 228);
+    width: 815px;
+    height: 235px;
+    
+    
+}
+.item_img_main{
+    height: 125px;
+    width: 716px;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.item_img_1 img{
+    height: 120px;
+    width: 80px;
+}
+.item_des{
+text-align: start;
+padding-left: 10px;
+}
+.item_price{
+    text-align: start;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.item_size{
+    text-align: start;
+    padding-left: 10px;
+    margin-top: 25px;
+}
+.item_dilivery{
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.item_btn{
+    display: flex;
+    justify-content: space-around;
+    height: 38px;
+    border: 1px solid rgb(225, 225, 225);
+    margin-top: 20px;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+}
+.item_btn button{
+    width: 390px;
+    background-color: #fff;
+    border: none;
+    font-size: 14px;
+    color: #faa619;
+    margin-top: 10px;
+}
+.item_btn button:hover{
+    cursor: pointer;
+}
