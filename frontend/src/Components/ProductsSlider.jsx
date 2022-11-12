@@ -103,7 +103,7 @@ export function ProductsSlider({data}) {
                       color={"rgb(146, 147, 145)"}
                       textDecoration={"line-through"}
                     >
-                      {`₹500`}
+                      {`₹700`}
                     </Box>
                   </Flex>
                   <Box

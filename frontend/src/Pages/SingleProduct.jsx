@@ -42,10 +42,21 @@ const SingleProduct = () => {
 
     useEffect(() => {
       const gender = JSON.parse(localStorage.getItem("gender"))
-      axios.get(`https://lifestylestore-api-.up.railway.app/${gender}`).then((res) => {
+      axios.get(`https://lifestylestore-api-.up.railway.app/${gender}/?limit=70`).then((res) => {
         // console.log(res.data.womens)
      if(gender === "womens"){
       setData(res.data.womens);
+     }
+     else if(gender === "mens"){
+      setData(res.data.mens)
+     }
+     else if(gender==="kids"){
+      // console.log(res.data.kid)
+      setData(res.data.kid)
+     }
+     else if(gender ==="ShoesAndBags"){
+      setData(res.data.shoesAndBags)
+      // console.log(res.data.shoesAndBags)
      }
       });
     }, []);
