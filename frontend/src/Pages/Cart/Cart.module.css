@@ -27,18 +27,15 @@
 }
 
 .cart_main{
-    border: 2px solid red;
     width: 1236px;
     margin: auto;
-    display: grid;
-    grid-template-columns:repeat(1,fr);
-    row-gap: 20px;   
-    
+    display: flex;    
 }
 .items_div{
-    width: 816px;
-    /* border: 1px solid green; */
-    
+    width: 816px;  
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:10px;
 }
 .price_main{
     width: 420px;
