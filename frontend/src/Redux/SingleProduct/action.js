@@ -6,3 +6,10 @@ export const updateSingleProduct = (payload)=>{
         payload
     }
 }
+
+export const updateCart=(payload)=>{
+    return{
+        type:types.UPDATE_DATA,
+        payload
+    }
+}

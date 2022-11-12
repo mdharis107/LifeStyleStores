@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export const WomenHomePage = () => {
+  localStorage.setItem("cart",JSON.stringify([]));
   const settings = {
     infinite: true,
     autoplay: true,

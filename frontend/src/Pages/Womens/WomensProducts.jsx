@@ -5,8 +5,23 @@ import arrow from "./wpassert/arrow.png";
 import Wfilter from './Wfilter';
 import { useState } from 'react';
 import Eachproduct from '../../Components/Eachproduct';
+import axios from "axios";
+import { useEffect } from 'react';
 
 const WomensProducts = () => {
+  const [url,setUrl] = useState("https://lifestylestore-api-.up.railway.app/womens/?page=1&limit=48");
+  const [products,setProducts] = useState([]);
+  
+  useEffect(()=>{
+    axios.get(`${url}`)
+    .then(res=>{
+      const val = res.data.womens;
+      setProducts(val)
+    })
+    .catch(e=>{
+      console.log(e)
+    })
+  },[url])
   
   const category=[
     {
@@ -67,91 +82,91 @@ const WomensProducts = () => {
     }
   ]
   // const [btn,setBtn] = useState("btn")
-  const products=[
-    {
-      gender:"women",
-      category:"Top Wear",
-      image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010465316-Pink-Mauve-1000010465316_01-2100.jpg",
-      price:1049,
-      Dprice:734,
-      product:"BOSSINI Women Striped Knit Top",
-      Discount:"30% OFF",
-      Soffer:"2 AT 50% OFF",
-      Sdiscount:50
-    },
-    {
-      image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010465316-Pink-Mauve-1000010465316_01-2100.jpg",
-      price:1049,
-      Dprice:734,
-      product:"BOSSINI Women Striped Knit Top",
-      Discount:"30% OFF",
-      Soffer:"2 AT 50% OFF",
-      Sdiscount:50
-    },
-    {
-      image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010465316-Pink-Mauve-1000010465316_01-2100.jpg",
-      price:1049,
-      Dprice:734,
-      product:"BOSSINI Women Striped Knit Top",
-      Discount:"30% OFF",
-      Soffer:"2 AT 50% OFF",
-      Sdiscount:50
-    },
-    {
-      image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010465316-Pink-Mauve-1000010465316_01-2100.jpg",
-      price:1049,
-      Dprice:734,
-      product:"BOSSINI Women Striped Knit Top",
-      Discount:"30% OFF",
-      Soffer:"2 AT 50% OFF",
-      Sdiscount:50
-    },
-    {
-      image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010465316-Pink-Mauve-1000010465316_01-2100.jpg",
-      price:1049,
-      Dprice:734,
-      product:"BOSSINI Women Striped Knit Top",
-      Discount:"30% OFF",
-      Soffer:"2 AT 50% OFF",
-      Sdiscount:50
-    },
-    {
-      image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010465316-Pink-Mauve-1000010465316_01-2100.jpg",
-      price:1049,
-      Dprice:734,
-      product:"BOSSINI Women Striped Knit Top",
-      Discount:"30% OFF",
-      Soffer:"2 AT 50% OFF",
-      Sdiscount:50
-    },
-    {
-      image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010465316-Pink-Mauve-1000010465316_01-2100.jpg",
-      price:1049,
-      Dprice:734,
-      product:"BOSSINI Women Striped Knit Top",
-      Discount:"30% OFF",
-      Soffer:"2 AT 50% OFF",
-      Sdiscount:50
-    },
-    {
-      image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010465316-Pink-Mauve-1000010465316_01-2100.jpg",
-      price:1049,
-      Dprice:734,
-      product:"BOSSINI Women Striped Knit Top",
-      Discount:"30% OFF",
-      Soffer:"2 AT 50% OFF",
-      Sdiscount:50
-    },
-    {
-      image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010465316-Pink-Mauve-1000010465316_01-2100.jpg",
-      price:1049,
-      Dprice:734,
-      product:"BOSSINI Women Striped Knit Top",
-      Discount:"30% OFF",
-      Soffer:"2 AT 50% OFF",
-      Sdiscount:50
-    },
-  ]
+  // const products=[
+  //   {
+  //     gender:"women",
+  //     category:"Top Wear",
+  //     image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010465316-Pink-Mauve-1000010465316_01-2100.jpg",
+  //     price:1049,
+  //     Dprice:734,
+  //     product:"BOSSINI Women Striped Knit Top",
+  //     Discount:"30% OFF",
+  //     Soffer:"2 AT 50% OFF",
+  //     Sdiscount:50
+  //   },
+  //   {
+  //     image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010465316-Pink-Mauve-1000010465316_01-2100.jpg",
+  //     price:1049,
+  //     Dprice:734,
+  //     product:"BOSSINI Women Striped Knit Top",
+  //     Discount:"30% OFF",
+  //     Soffer:"2 AT 50% OFF",
+  //     Sdiscount:50
+  //   },
+  //   {
+  //     image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010465316-Pink-Mauve-1000010465316_01-2100.jpg",
+  //     price:1049,
+  //     Dprice:734,
+  //     product:"BOSSINI Women Striped Knit Top",
+  //     Discount:"30% OFF",
+  //     Soffer:"2 AT 50% OFF",
+  //     Sdiscount:50
+  //   },
+  //   {
+  //     image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010465316-Pink-Mauve-1000010465316_01-2100.jpg",
+  //     price:1049,
+  //     Dprice:734,
+  //     product:"BOSSINI Women Striped Knit Top",
+  //     Discount:"30% OFF",
+  //     Soffer:"2 AT 50% OFF",
+  //     Sdiscount:50
+  //   },
+  //   {
+  //     image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010465316-Pink-Mauve-1000010465316_01-2100.jpg",
+  //     price:1049,
+  //     Dprice:734,
+  //     product:"BOSSINI Women Striped Knit Top",
+  //     Discount:"30% OFF",
+  //     Soffer:"2 AT 50% OFF",
+  //     Sdiscount:50
+  //   },
+  //   {
+  //     image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010465316-Pink-Mauve-1000010465316_01-2100.jpg",
+  //     price:1049,
+  //     Dprice:734,
+  //     product:"BOSSINI Women Striped Knit Top",
+  //     Discount:"30% OFF",
+  //     Soffer:"2 AT 50% OFF",
+  //     Sdiscount:50
+  //   },
+  //   {
+  //     image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010465316-Pink-Mauve-1000010465316_01-2100.jpg",
+  //     price:1049,
+  //     Dprice:734,
+  //     product:"BOSSINI Women Striped Knit Top",
+  //     Discount:"30% OFF",
+  //     Soffer:"2 AT 50% OFF",
+  //     Sdiscount:50
+  //   },
+  //   {
+  //     image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010465316-Pink-Mauve-1000010465316_01-2100.jpg",
+  //     price:1049,
+  //     Dprice:734,
+  //     product:"BOSSINI Women Striped Knit Top",
+  //     Discount:"30% OFF",
+  //     Soffer:"2 AT 50% OFF",
+  //     Sdiscount:50
+  //   },
+  //   {
+  //     image:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010465316-Pink-Mauve-1000010465316_01-2100.jpg",
+  //     price:1049,
+  //     Dprice:734,
+  //     product:"BOSSINI Women Striped Knit Top",
+  //     Discount:"30% OFF",
+  //     Soffer:"2 AT 50% OFF",
+  //     Sdiscount:50
+  //   },
+  // ]
   
   return (
     <div className='wp'>
