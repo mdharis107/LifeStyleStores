@@ -26,6 +26,7 @@ const MainRoutes = () => {
         <Route path="/kids/products" element={<KidsProducts />} />
         <Route path="/shoes & bags/products" element={<ShoesBagsProducts />} />
         <Route path="/beauty/products" element={<Beauty />} />
+        <Route path="/SingleProduct" element={<SingleProduct/>}/> 
       </Routes>
     </div>
   );
