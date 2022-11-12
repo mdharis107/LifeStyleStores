@@ -6,7 +6,7 @@ import { useState } from 'react';
 import {useNavigate} from "react-router-dom"
 
 const SingleProduct = () => {
-    const Item = useSelector((store)=>store.SingleProduct.data);
+    const Item = JSON.parse(localStorage.getItem("data"));
     const [pin,setPin] = useState("");
     const navigate = useNavigate();
     const [recieve,setReceive] = useState("When will I receive my order?");
