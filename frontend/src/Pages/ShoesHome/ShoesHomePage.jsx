@@ -7,6 +7,7 @@ import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ShoeSlider } from "./ShoeSlider";
+import Navbar from "../../fw19_0144/component/navbar"
 
 export const ShoesHomePage = () => {
   const settings = {
@@ -52,6 +53,7 @@ export const ShoesHomePage = () => {
 
   return (
     <div>
+      {/* <Navbar/> */}
       {/* Yellow Part */}
       <Box p={1} color={"#ffffff"} bg={"#FAA619"}>
         <h2 className={styles.heading}>

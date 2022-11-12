@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Navbar from "../../fw19_0144/component/navbar";
 
 export const BeautyHomePage = () => {
   const settings = {
@@ -50,6 +51,7 @@ export const BeautyHomePage = () => {
   };
   return (
     <div>
+      {/* <Navbar/> */}
       {/* Yellow Part */}
       <Box p={1} color={"#ffffff"} bg={"#FAA619"}>
         <h2 className={styles.heading}>Lakme - Min 30% off</h2>

@@ -144,7 +144,7 @@ const handlesignout=()=>{
         </Flex>
         <Flex fontSize={'15px'} display={[showSmNav?"flex":"none",showSmNav?"flex":"none",showSmNav?"flex":"none", "flex"]} align={"center"} direction={["column","column","column","row"]} gap="25px" width={["100%","100%","100%","90%"]}>
           <br />
-          <Link to='/mens'>
+          <Link to='/'>
           <Menu isOpen={isOpenModal2}>
           <MenuButton
                 variant="ghost"
@@ -159,7 +159,7 @@ const handlesignout=()=>{
                 onMouseLeave={onCloseModal2}
                 
             >
-              Men
+              Women
             </MenuButton>
             <MenuList  display="flex" justifyContent="space-evenly" 
             style={{color:"black" ,padding:"20px",width:"1318px"}} 
@@ -255,7 +255,7 @@ const handlesignout=()=>{
             </MenuList>
           </Menu>
           </Link>
-          <Link  to='/womens'>
+          <Link  to='/mens'>
           <Menu isOpen={isOpenModal3}>
        <MenuButton
                 variant="ghost"
@@ -270,7 +270,7 @@ const handlesignout=()=>{
                 onMouseLeave={onCloseModal3}
                 
             >
-            Women
+            Men
             </MenuButton>
             <MenuList  display="flex" justifyContent="space-evenly" 
             style={{color:"black" ,padding:"20px",width:"1318px"}} 
@@ -475,7 +475,7 @@ const handlesignout=()=>{
             </MenuList>
           </Menu>
           </Link>
-          <Link  to='/shoes&bags'>
+          <Link  to='/shoes & bags'>
           <Menu isOpen={isOpenModal5}>
           <MenuButton
                 variant="ghost"
@@ -736,11 +736,11 @@ const handlesignout=()=>{
           </Link>
           <span>|</span>
             {/* _hover={{textDecoration:"none", color:"#03A9F4"}}  textDecoration={"none"} */}
-          <Link   to='/signup'>
+          
           {/* <Text colorScheme={"twitter"}  _hover={{bg:"#03A9F4", color:"#FFF"}} py={"10px"} px={"15px"} border={"1px solid black"}> SIGNUP FREE</Text> */}
           <Text onClick={onOpenModal}  _hover={{textDecoration:"none", color:"#ffa500"}} fontWeight="600"> {auth?(
             <Menu isOpen={isOpenModal8}>
-            <Link to="/makeup"> <MenuButton
+            <MenuButton
                   variant="ghost"
                   mx={4}
                   py={[1, 2, 6]}
@@ -754,7 +754,7 @@ const handlesignout=()=>{
                   
               >
                {newname}
-              </MenuButton></Link>
+              </MenuButton>
               <MenuList  display="flex" justifyContent="space-evenly" 
               style={{color:"black" ,padding:"20px",width:"20%"}} 
               onMouseEnter={onOpenModal8} 
@@ -774,7 +774,7 @@ const handlesignout=()=>{
                   </MenuList>
             </Menu>
           ):"SignUp/SignIn"}</Text>
-          </Link>
+          
           <Modal isOpen={isOpenModal} style={{height:'1000px'}} size={['sm','md','xl']} onClose={onCloseModal} >
         <ModalOverlay />
         {otpModal?(<ModalContent>

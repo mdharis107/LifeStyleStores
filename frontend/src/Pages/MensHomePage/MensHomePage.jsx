@@ -7,6 +7,7 @@ import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { MenSlider } from "./MenSlider";
+import Navbar from "../../fw19_0144/component/navbar";
 
 export const MenHomePage = () => {
   const settings = {
@@ -52,6 +53,7 @@ export const MenHomePage = () => {
 
   return (
     <div id={styles.all}>
+      {/* <Navbar/> */}
       <Box p={1} color={"#ffffff"} bg={"#FAA619"}>
         <h2 className={styles.heading}>Buy 1 Get 1 Free on Best of Brands</h2>
       </Box>

@@ -5,6 +5,7 @@ import { Image } from "@chakra-ui/react";
 import { SliderPage } from "./Slider";
 import Slider from "react-slick";
 import axios from "axios"
+import Navbar from "../../fw19_0144/component/navbar"
 
 // const AutoplaySlider = withAutoplay(AwesomeSlider);
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
@@ -56,6 +57,7 @@ export const WomenHomePage = () => {
 
   return (
     <div id={styles.all}>
+      {/* <Navbar/> */}
       <Box p={1} color={"#ffffff"} bg={"#FAA619"}>
         <h2 className={styles.heading}>Lingerie & Nightwear From ₹ 299.</h2>
       </Box>

@@ -1,7 +1,7 @@
 import React from 'react';
 import "../Pages/Womens/WomensProducts.css"
 import {useSelector} from "react-redux";
-import Navbar from '../Components/Navbar';
+import Navbar from '.././fw19_0144/component/navbar';
 import { useState } from 'react';
 import {useNavigate} from "react-router-dom"
 
@@ -36,7 +36,7 @@ const SingleProduct = () => {
     }
   return (
     <div className='wp'>
-      <Navbar/>
+      {/* <Navbar/> */}
       <div className='head'>
         <div>
           <h1 className='section'>{Item.productName}</h1>

@@ -1,9 +1,10 @@
 import React,{useState,useEffect} from 'react'
 import "../Womens/WomensProducts.css";
-import Navbar from "../../Components/Navbar";
+import Navbar from "../../fw19_0144/component/navbar";
 import arrow from "../Womens/wpassert/arrow.png";
 import Eachproduct from '../../Components/Eachproduct';
 import axios from "axios"
+import Footer from "../../fw19_0144/component/footer"
 
 const Beauty = () => {
   const [url,setUrl] = useState("https://lifestylestore-api-.up.railway.app/beauty/?page=1&limit=48");
@@ -109,7 +110,7 @@ const Beauty = () => {
       // ]
   return (
     <div className='wp'>
-      <Navbar/>
+      {/* <Navbar/> */}
       <div className='head'>
         <div>
           <div className="navroute">
@@ -161,6 +162,7 @@ const Beauty = () => {
             ))
           }
       </div>
+      {/* <Footer/> */}
     </div>
   )
 }

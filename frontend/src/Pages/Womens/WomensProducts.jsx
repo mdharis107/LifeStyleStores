@@ -1,6 +1,6 @@
 import React from 'react';
 import "./WomensProducts.css";
-import Navbar from "../../Components/Navbar";
+import Navbar from "../../fw19_0144/component/navbar";
 import arrow from "./wpassert/arrow.png";
 import Wfilter from './Wfilter';
 import { useState } from 'react';
@@ -170,7 +170,7 @@ const WomensProducts = () => {
   
   return (
     <div className='wp'>
-      <Navbar/>
+      {/* <Navbar/> */}
       <div className='head'>
         <div>
           <div className="navroute">
