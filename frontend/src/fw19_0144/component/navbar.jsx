@@ -146,7 +146,7 @@ const handlesignout=()=>{
           <br />
           <Link to='/mens'>
           <Menu isOpen={isOpenModal2}>
-          <Link to="/makeup"> <MenuButton
+          <MenuButton
                 variant="ghost"
                 mx={2}
                 py={[1, 2, 6]}
@@ -160,7 +160,7 @@ const handlesignout=()=>{
                 
             >
               Men
-            </MenuButton></Link>
+            </MenuButton>
             <MenuList  display="flex" justifyContent="space-evenly" 
             style={{color:"black" ,padding:"20px",width:"1318px"}} 
             onMouseEnter={onOpenModal2} 
@@ -257,7 +257,7 @@ const handlesignout=()=>{
           </Link>
           <Link  to='/womens'>
           <Menu isOpen={isOpenModal3}>
-          <Link to="/makeup"> <MenuButton
+       <MenuButton
                 variant="ghost"
                 mx={2}
                 py={[1, 2, 6]}
@@ -271,7 +271,7 @@ const handlesignout=()=>{
                 
             >
             Women
-            </MenuButton></Link>
+            </MenuButton>
             <MenuList  display="flex" justifyContent="space-evenly" 
             style={{color:"black" ,padding:"20px",width:"1318px"}} 
             onMouseEnter={onOpenModal3} 
@@ -367,7 +367,7 @@ const handlesignout=()=>{
           </Link>
           <Link  to='/kids'>
           <Menu isOpen={isOpenModal4}>
-          <Link to="/makeup"> <MenuButton
+          <MenuButton
                 variant="ghost"
                 mx={1}
                 py={[1, 2, 6]}
@@ -381,7 +381,7 @@ const handlesignout=()=>{
                 
             >
              Kids
-            </MenuButton></Link>
+            </MenuButton>
             <MenuList  display="flex" justifyContent="space-evenly" 
             style={{color:"black" ,padding:"20px",width:"1318px"}} 
             onMouseEnter={onOpenModal4} 
@@ -477,7 +477,7 @@ const handlesignout=()=>{
           </Link>
           <Link  to='/shoes&bags'>
           <Menu isOpen={isOpenModal5}>
-          <Link to="/makeup"> <MenuButton
+          <MenuButton
                 variant="ghost"
                 mx={1}
                 py={[1, 2, 6]}
@@ -491,7 +491,7 @@ const handlesignout=()=>{
                 width={['140px']}
             >
              Shoes & Bags
-            </MenuButton></Link>
+            </MenuButton>
             <MenuList  display="flex" justifyContent="space-evenly" 
             style={{color:"black" ,padding:"20px",width:"1318px"}} 
             onMouseEnter={onOpenModal5} 
@@ -587,7 +587,7 @@ const handlesignout=()=>{
           </Link>
           <Link  to='/beauty'>
           <Menu isOpen={isOpenModal6}>
-          <Link to="/makeup"> <MenuButton
+           <MenuButton
                 variant="ghost"
                 mx={1}
                 py={[1, 2, 6]}
@@ -601,7 +601,7 @@ const handlesignout=()=>{
                 
             >
               Beauty
-            </MenuButton></Link>
+            </MenuButton>
             <MenuList  display="flex" justifyContent="space-evenly" 
             style={{color:"black" ,padding:"20px",width:"1318px"}} 
             onMouseEnter={onOpenModal1} 
@@ -700,7 +700,7 @@ const handlesignout=()=>{
       
        <Link  to='/more'>
        <Menu isOpen={isOpenModal7}>
-          <Link to="/makeup"> <MenuButton
+         <MenuButton
                 variant="ghost"
                 mx={4}
                 py={[1, 2, 6]}
@@ -714,7 +714,7 @@ const handlesignout=()=>{
                 
             >
               More
-            </MenuButton></Link>
+            </MenuButton>
             <MenuList  display="flex" justifyContent="space-evenly" 
             style={{color:"black" ,padding:"20px",width:"20%"}} 
             onMouseEnter={onOpenModal7} 
