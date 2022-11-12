@@ -3,12 +3,17 @@ import "../Pages/Womens/WomensProducts.css"
 import {useSelector} from "react-redux";
 import Navbar from '../Components/Navbar';
 import { useState } from 'react';
+import {useNavigate} from "react-router-dom"
 
 const SingleProduct = () => {
     const Item = useSelector((store)=>store.SingleProduct.data);
     const [pin,setPin] = useState("");
+    const navigate = useNavigate();
     const [recieve,setReceive] = useState("When will I receive my order?");
     // console.log(Item)
+    const handlecart=()=>{
+      navigate("/cart")
+    }
     const handlebtn=()=>{
       if(pin !== ""){
         setReceive(`Delivery Within 5-7 business days to ${pin}`)
@@ -38,7 +43,7 @@ const SingleProduct = () => {
               <p>Save ₹{Item.price - Item.Dprice} ({100-Math.round((Item.Dprice/Item.price)*100)}%)</p>
             </div>
             <u>Free shipping on all orders</u> <br />
-            <button className='sbtn'>ADD TO BASKET</button>
+            <button onClick={handlecart} className='sbtn'>ADD TO BASKET</button>
             <div style={{color:"red", fontSize:"12px", fontWeight:"500",cursor:"pointer"}}>PROMOTION OFFER</div>
             <p>Shop for Rs. 2,999 & Get 12% Off. Code - SAVE12 | Shop for Rs. 1,999 & Get 8% Off. Code - SAVE8 <u style={{color:"orangered"}}>Browse promotion</u></p>
             <div className="curr1">

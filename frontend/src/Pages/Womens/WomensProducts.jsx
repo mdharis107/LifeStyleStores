@@ -7,6 +7,7 @@ import { useState } from 'react';
 import Eachproduct from '../../Components/Eachproduct';
 
 const WomensProducts = () => {
+  
   const category=[
     {
       image:"https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS_SubCatimg/women-beauty.jpg",
@@ -151,6 +152,7 @@ const WomensProducts = () => {
       Sdiscount:50
     },
   ]
+  
   return (
     <div className='wp'>
       <Navbar/>

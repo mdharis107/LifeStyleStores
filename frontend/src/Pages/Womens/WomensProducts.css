@@ -363,5 +363,8 @@
         display: grid;
         grid-template-columns: 1fr;
     }
+    .review p{
+        margin-bottom: 50px;
+    }
 }
 

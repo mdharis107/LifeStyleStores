@@ -11,20 +11,23 @@ const Eachproduct = ({item,id}) => {
       dispatch(updateSingleProduct(item));
       navigate("/SingleProduct")
     }
+    const handlecart=()=>{
+      navigate("/cart")
+    }
   return (
-    <div onClick={()=>handleClick()}>
+    <div>
         <div key={id} className="container" onMouseEnter={(e)=>setBtn("btnshow")} onMouseLeave={(e)=>setBtn("btn")}>
-             <img src={item.image} alt="" />
-             <div className="off">
+             <img onClick={()=>handleClick()} src={item.image} alt="" />
+             <div onClick={()=>handleClick()} className="off">
                <div>{item.Soffer}</div>
                <div>{item.Discount}</div>
              </div>
-             <div className="price">
+             <div onClick={()=>handleClick()} className="price">
                <div>₹ {item.Dprice}</div>
                <s style={{fontSize:"12px"}}>₹{item.price}</s>
              </div>
-             <p>{item.product}</p>
-             <button className={btn}  > ADD TO BASKET</button>
+             <p onClick={()=>handleClick()}>{item.product}</p>
+             <button className={btn} onClick={handlecart}  > ADD TO BASKET</button>
         </div>
     </div>
   )
