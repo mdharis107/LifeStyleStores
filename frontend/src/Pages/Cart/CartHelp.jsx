@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { useState } from 'react';
 import styles from "./Cart.module.css"
 
 const CartHelp = ({item,handleC}) => {
@@ -14,8 +14,6 @@ const CartHelp = ({item,handleC}) => {
         localStorage.setItem("cart",JSON.stringify(newarr))
         handleC()
     }
-   
-    
   return (
     <div className={styles.item_container}>
           <div className={styles.item_img_main}>

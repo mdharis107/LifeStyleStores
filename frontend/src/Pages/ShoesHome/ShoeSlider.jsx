@@ -41,7 +41,7 @@ const ShoeData = [
     price: "₹799",
     Sprice: "₹1,599",
     name: "GINGER Women Textured Ballerinas",
-  }
+  },
 ];
 
 export const ShoeSlider = () => {
@@ -88,7 +88,15 @@ export const ShoeSlider = () => {
     <div>
       <Slider {...settings}>
         {ShoeData.map((ele) => (
-          <Box w={"full"} pl={"8px"} pr={"8px"}>
+          <Box
+            _hover={{ outline: "none" }}
+            textDecoration={"none"}
+            as={"a"}
+            href={"/womens/products"}
+            w={"full"}
+            pl={"8px"}
+            pr={"8px"}
+          >
             <Image position={"relative"} w={"300px"} src={ele.img} alt="" />
             <Flex
               fontWeight={"600"}
@@ -97,7 +105,7 @@ export const ShoeSlider = () => {
               position={"absolute"}
               gap={10}
               fontSize={"12px"}
-             justify={'space-between'}
+              justify={"space-between"}
             >
               <Box
                 borderRadius={"2px"}
@@ -105,8 +113,7 @@ export const ShoeSlider = () => {
                 p={"5px 8.5px"}
                 bg={"white"}
                 color={"black"}
-               ml={'10px'}
-
+                ml={"10px"}
               >
                 EXTRA 8% OFF
               </Box>
@@ -116,7 +123,7 @@ export const ShoeSlider = () => {
                 p={"5px 8.5px"}
                 bg={"white"}
                 color={"black"}
-                ml={'95px'}
+                ml={"95px"}
               >
                 15% OFF
               </Box>

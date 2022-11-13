@@ -1,15 +1,20 @@
 import React from 'react';
 import "../Pages/Womens/WomensProducts.css"
 import {useSelector} from "react-redux";
-import Navbar from '../Components/Navbar';
+import Navbar from '.././fw19_0144/component/navbar';
 import { useState } from 'react';
 import {useNavigate} from "react-router-dom"
+import { ProductsSlider } from '../Components/ProductsSlider';
+import axios from "axios";
+import { useEffect } from "react";
+import { Box, Heading } from '@chakra-ui/react';
 
 const SingleProduct = () => {
     const Item = JSON.parse(localStorage.getItem("data"));
     const [pin,setPin] = useState("");
     const navigate = useNavigate();
     const [recieve,setReceive] = useState("When will I receive my order?");
+    const [data,setData] = useState([])
     // console.log(Item)
     const handlecart=()=>{
       const arr = JSON.parse(localStorage.getItem("cart"))
@@ -34,9 +39,32 @@ const SingleProduct = () => {
         setReceive("When will I receive my order?")
       }
     }
+
+    useEffect(() => {
+      const gender = JSON.parse(localStorage.getItem("gender"))
+      axios.get(`https://lifestylestore-api-.up.railway.app/${gender}/?limit=70`).then((res) => {
+        // console.log(res.data.womens)
+     if(gender === "womens"){
+      setData(res.data.womens);
+     }
+     else if(gender === "mens"){
+      setData(res.data.mens)
+     }
+     else if(gender==="kids"){
+      // console.log(res.data.kid)
+      setData(res.data.kid)
+     }
+     else if(gender ==="ShoesAndBags"){
+      setData(res.data.shoesAndBags)
+      // console.log(res.data.shoesAndBags)
+     }
+      });
+    }, []);
+
+    // console.log(data)
   return (
     <div className='wp'>
-      <Navbar/>
+      {/* <Navbar/> */}
       <div className='head'>
         <div>
           <h1 className='section'>{Item.productName}</h1>
@@ -110,6 +138,20 @@ const SingleProduct = () => {
             <input style={{border:"1px solid orange",color:"orange",fontWeight:"bold"}} type="submit" value="WRITE A REVIEW" />
           </div>
         </div>
+      </div>
+      <div>
+      <Box w={'80%'} m={'auto'} >
+          <Heading
+            textAlign={"left"}
+            fontWeight={"normal"}
+            color={"#000000"}
+            fontSize={"36px"}
+            as={"h2"}
+          >
+            You May Also Like
+          </Heading>
+        </Box>
+        <ProductsSlider data={data} />
       </div>  
     </div>
   )

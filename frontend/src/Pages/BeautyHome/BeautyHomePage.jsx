@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Navbar from "../../fw19_0144/component/navbar";
 
 export const BeautyHomePage = () => {
   const settings = {
@@ -50,6 +51,7 @@ export const BeautyHomePage = () => {
   };
   return (
     <div>
+      {/* <Navbar/> */}
       {/* Yellow Part */}
       <Box p={1} color={"#ffffff"} bg={"#FAA619"}>
         <h2 className={styles.heading}>Lakme - Min 30% off</h2>
@@ -58,7 +60,10 @@ export const BeautyHomePage = () => {
       {/* Slider */}
       <Box p={"32px 0 0 0 "} w={"80%"} m={"auto"} h={50}>
         <Slider {...settings}>
-          <div
+          <Box
+            textDecoration={"none"}
+            as={"a"}
+            href="/beauty/products"
             style={{
               backgroundColor: "#FFFFFF",
             }}
@@ -67,8 +72,11 @@ export const BeautyHomePage = () => {
               src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/HP_LS_Beauty_Desktop-1-10Nov2022.jpg"
               alt=""
             />
-          </div>
-          <div
+          </Box>
+          <Box
+            textDecoration={"none"}
+            as={"a"}
+            href="/beauty/products"
             style={{
               backgroundColor: "#FFFFFF",
             }}
@@ -77,8 +85,11 @@ export const BeautyHomePage = () => {
               src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/HP_LS_Beauty_Desktop-3-10Oct2022.jpg"
               alt=""
             />
-          </div>
-          <div
+          </Box>
+          <Box
+            textDecoration={"none"}
+            as={"a"}
+            href="/beauty/products"
             style={{
               backgroundColor: "#FFFFFF",
             }}
@@ -87,8 +98,11 @@ export const BeautyHomePage = () => {
               src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/HP_LS_Beauty_Desktop-2-07Nov2022.jpg"
               alt=""
             />
-          </div>
-          <div
+          </Box>
+          <Box
+            textDecoration={"none"}
+            as={"a"}
+            href="/beauty/products"
             style={{
               backgroundColor: "#FFFFFF",
             }}
@@ -97,8 +111,11 @@ export const BeautyHomePage = () => {
               src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/HP_LS_Beauty_Desktop-4-10Nov2022.jpg"
               alt=""
             />
-          </div>
-          <div
+          </Box>
+          <Box
+            textDecoration={"none"}
+            as={"a"}
+            href="/beauty/products"
             style={{
               backgroundColor: "#FFFFFF",
             }}
@@ -107,8 +124,11 @@ export const BeautyHomePage = () => {
               src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Banner6-desktop-Beauty-19Oct2022.jpg"
               alt=""
             />
-          </div>
-          <div
+          </Box>
+          <Box
+            textDecoration={"none"}
+            as={"a"}
+            href="/beauty/products"
             style={{
               backgroundColor: "#FFFFFF",
             }}
@@ -117,7 +137,7 @@ export const BeautyHomePage = () => {
               src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Banner5-desktop-Beauty-10Nov2022.jpg"
               alt=""
             />
-          </div>
+          </Box>
         </Slider>
       </Box>
 
@@ -129,7 +149,12 @@ export const BeautyHomePage = () => {
         mt={"500px"}
         borderBottom={"1px solid #ecedeb"}
       >
-        <Box p={"0 0 26px 0"}>
+        <Box
+          textDecoration={"none"}
+          as={"a"}
+          href="/beauty/products"
+          p={"0 0 26px 0"}
+        >
           <Image
             src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-5modblock-oneBytwo1-C-beauty-07Oct2022.jpg"
             alt=""
@@ -139,7 +164,13 @@ export const BeautyHomePage = () => {
 
       {/* Big Boxes - 1 */}
       <Stack m={"auto"} w={"80%"} pt={"40px"}>
-        <Box p={"0 0 56px 0"} borderBottom={"1px solid #ecedeb"}>
+        <Box
+          textDecoration={"none"}
+          as={"a"}
+          href="/beauty/products"
+          p={"0 0 56px 0"}
+          borderBottom={"1px solid #ecedeb"}
+        >
           <Image
             src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-10modblock-oneBythree-A-Beauty-11Nov2022.jpg"
             alt=""
@@ -149,7 +180,13 @@ export const BeautyHomePage = () => {
 
       {/* Big Boxes - 1 */}
       <Stack m={"auto"} w={"80%"} pt={"40px"}>
-        <Box p={"0 0 56px 0"} borderBottom={"1px solid #ecedeb"}>
+        <Box
+          textDecoration={"none"}
+          as={"a"}
+          href="/beauty/products"
+          p={"0 0 56px 0"}
+          borderBottom={"1px solid #ecedeb"}
+        >
           <Image
             src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-modularblock-oneBytwo1A-Beauty-18Oct2022.jpg"
             alt=""
@@ -180,42 +217,78 @@ export const BeautyHomePage = () => {
             templateColumns="repeat(6, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/beauty/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-B-4-Beauty-Desktop-29Sep2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-B-1-Beauty-Desktop-11April2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-B-2-Beauty-Desktop-16March2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-B-3-Beauty-Desktop-16March2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-B-5-Beauty-Desktop-13Sep2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-B-6-Beauty-Desktop-16March2022.jpg"
@@ -249,7 +322,13 @@ export const BeautyHomePage = () => {
             templateColumns="repeat(6, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-1-Desktop-Beauty-13Sept2022.jpg"
@@ -264,7 +343,13 @@ export const BeautyHomePage = () => {
                 From ₹199
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-2-Desktop-Beauty-13Sept2022.jpg"
@@ -279,7 +364,13 @@ export const BeautyHomePage = () => {
                 From ₹99
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-3-Desktop-Beauty-13Sept2022.jpg"
@@ -294,7 +385,13 @@ export const BeautyHomePage = () => {
                 From ₹75
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-4-Desktop-Beauty-13Sept2022.jpg"
@@ -309,7 +406,13 @@ export const BeautyHomePage = () => {
                 From ₹99
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-5-Desktop-Beauty-13Sept2022.jpg"
@@ -324,7 +427,13 @@ export const BeautyHomePage = () => {
                 From ₹99
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-6-Desktop-Beauty-12Oct2022.jpg"
@@ -366,7 +475,13 @@ export const BeautyHomePage = () => {
             templateColumns="repeat(6, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-D-1-Beauty-Desktop-09Sep2022.jpg"
@@ -381,7 +496,13 @@ export const BeautyHomePage = () => {
                 Up To 15% Off
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-D-2-Beauty-Desktop-09Sep2022.jpg"
@@ -396,7 +517,13 @@ export const BeautyHomePage = () => {
                 Up To 30% Off
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-3-Desktop-Beauty-13Sept2022.jpg"
@@ -411,7 +538,13 @@ export const BeautyHomePage = () => {
                 Up To 30% Off
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-D-4-Beauty-Desktop-09Sep2022.jpg"
@@ -426,7 +559,13 @@ export const BeautyHomePage = () => {
                 Up To 15% Off
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-D-5-Beauty-Desktop-09Sep2022.jpg"
@@ -441,7 +580,13 @@ export const BeautyHomePage = () => {
                 Up To 15% Off
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-D-6-Beauty-Desktop-09Sep2022.jpg"
@@ -462,7 +607,13 @@ export const BeautyHomePage = () => {
 
       {/* Big Boxes - 1 */}
       <Stack m={"auto"} w={"80%"} pt={"57px"}>
-        <Box p={"0 0 56px 0"} borderBottom={"1px solid #ecedeb"}>
+        <Box
+          textDecoration={"none"}
+          as={"a"}
+          href="/beauty/products"
+          p={"0 0 56px 0"}
+          borderBottom={"1px solid #ecedeb"}
+        >
           <Image
             src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modularblock1-A-02Aug2022.jpg"
             alt=""
@@ -493,21 +644,39 @@ export const BeautyHomePage = () => {
             templateColumns="repeat(3, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-8modblock-oneBythree-A-Beauty-12April2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-8modblock-oneBythree-B-Beauty-17March2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-8modblock-oneBythree-C-Beauty-17March2022.jpg"
@@ -533,7 +702,7 @@ export const BeautyHomePage = () => {
             fontSize={"36px"}
             as={"h2"}
           >
-           Beauty Essentials
+            Beauty Essentials
           </Heading>
         </Box>
         <Box pb={"30px"} w={"1276px"}>
@@ -541,21 +710,39 @@ export const BeautyHomePage = () => {
             templateColumns="repeat(3, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modblock-oneBythree-D-12April2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modblock-oneBythree-E-16March2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modblock-oneBythree-F-16March2022.jpg"
@@ -566,8 +753,8 @@ export const BeautyHomePage = () => {
         </Box>
       </Stack>
 
-        {/* Budget Corner - 3 */}
-        <Stack
+      {/* Budget Corner - 3 */}
+      <Stack
         pb={"30px"}
         w={"80%"}
         m={"auto"}
@@ -581,7 +768,7 @@ export const BeautyHomePage = () => {
             fontSize={"36px"}
             as={"h2"}
           >
-          Budget Corner
+            Budget Corner
           </Heading>
         </Box>
         <Box pb={"30px"} w={"1276px"}>
@@ -589,21 +776,39 @@ export const BeautyHomePage = () => {
             templateColumns="repeat(3, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/BEAUTY/PRODUCTS"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-13modblock-oneBythree-A-Beauty-12April2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/beauty/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-13modblock-oneBythree-B-Beauty-16March2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/beauty/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-13modblock-oneBythree-C-Beauty-16March2022.jpg"
@@ -614,8 +819,8 @@ export const BeautyHomePage = () => {
         </Box>
       </Stack>
 
-       {/* Budget Corner - 3 */}
-       <Stack
+      {/* Budget Corner - 3 */}
+      <Stack
         pb={"30px"}
         w={"80%"}
         m={"auto"}
@@ -629,7 +834,7 @@ export const BeautyHomePage = () => {
             fontSize={"36px"}
             as={"h2"}
           >
-          Top picks of the season
+            Top picks of the season
           </Heading>
         </Box>
         <Box pb={"30px"} w={"1276px"}>
@@ -637,21 +842,39 @@ export const BeautyHomePage = () => {
             templateColumns="repeat(3, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/beauty/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modularblock-oneBythree-A-16March2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/beauty/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modularblock-oneBythree-B-31March2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/beauty/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modularblock-oneBythree-C-16March2022.jpg"
@@ -662,8 +885,8 @@ export const BeautyHomePage = () => {
         </Box>
       </Stack>
 
-        {/* Budget Corner - 3 */}
-        <Stack
+      {/* Budget Corner - 3 */}
+      <Stack
         pb={"30px"}
         w={"80%"}
         m={"auto"}
@@ -677,7 +900,7 @@ export const BeautyHomePage = () => {
             fontSize={"36px"}
             as={"h2"}
           >
-          Luxury Collection
+            Luxury Collection
           </Heading>
         </Box>
         <Box pb={"30px"} w={"1276px"}>
@@ -685,21 +908,39 @@ export const BeautyHomePage = () => {
             templateColumns="repeat(3, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/beauty/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-6modblk-oneBythree-A-Beauty-13May2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/beauty/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-6modblk-oneBythree-B-Beauty-17March2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/beauty/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-6modblk-oneBythree-C-Beauty-17March2022.jpg"
