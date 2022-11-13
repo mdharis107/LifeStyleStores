@@ -63,7 +63,7 @@ export const KidsHomePage = () => {
       {/* Slider */}
       <Box p={"32px 0 0 0 "} w={"80%"} m={"auto"} h={50}>
         <Slider {...settings}>
-          <div
+          <Box textDecoration={"none"} as={"a"} href="/kids/products"
             style={{
               backgroundColor: "#FFFFFF",
             }}
@@ -72,8 +72,8 @@ export const KidsHomePage = () => {
               src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/HP_LS_Kids_Desktop-1-08Nov2022.gif"
               alt=""
             />
-          </div>
-          <div
+          </Box>
+          <Box textDecoration={"none"} as={"a"} href="/kids/products"
             style={{
               backgroundColor: "#FFFFFF",
             }}
@@ -82,8 +82,8 @@ export const KidsHomePage = () => {
               src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Banner2-desktop-Kids-07Nov2022.jpg"
               alt=""
             />
-          </div>
-          <div
+          </Box>
+          <Box textDecoration={"none"} as={"a"} href="/kids/products"
             style={{
               backgroundColor: "#FFFFFF",
             }}
@@ -92,8 +92,8 @@ export const KidsHomePage = () => {
               src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Banner3-desktop-Kids-07Nov2022.jpg"
               alt=""
             />
-          </div>
-          <div
+          </Box>
+          <Box textDecoration={"none"} as={"a"} href="/kids/products"
             style={{
               backgroundColor: "#FFFFFF",
             }}
@@ -102,8 +102,8 @@ export const KidsHomePage = () => {
               src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Banner4-desktop-Kids-07Nov2022.jpg"
               alt=""
             />
-          </div>
-          <div
+          </Box>
+          <Box textDecoration={"none"} as={"a"} href="/kids/products"
             style={{
               backgroundColor: "#FFFFFF",
             }}
@@ -112,8 +112,8 @@ export const KidsHomePage = () => {
               src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Banner5-desktop-Kids-07Nov2022.jpg"
               alt=""
             />
-          </div>
-          <div
+          </Box>
+          <Box textDecoration={"none"} as={"a"} href="/kids/products"
             style={{
               backgroundColor: "#FFFFFF",
             }}
@@ -122,7 +122,7 @@ export const KidsHomePage = () => {
               src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Banner6-desktop-Kids-07Nov2022.jpg"
               alt=""
             />
-          </div>
+          </Box>
         </Slider>
       </Box>
 
@@ -150,42 +150,42 @@ export const KidsHomePage = () => {
             templateColumns="repeat(6, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-U-1-Desktop-Kids-10Nov2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-U-2-Desktop-Kids-10Nov2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-U-3-Desktop-Kids-10Nov2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-U-1-Desktop-Kids-10Nov2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-U-2-Desktop-Kids-10Nov2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-U-3-Desktop-Kids-10Nov2022.jpg"
@@ -219,7 +219,7 @@ export const KidsHomePage = () => {
             templateColumns="repeat(6, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-T-1-Desktop-Kids-02Nov2022.png"
@@ -234,7 +234,7 @@ export const KidsHomePage = () => {
                 From ₹499
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-T-2-Desktop-Kids-02Nov2022.png"
@@ -249,7 +249,7 @@ export const KidsHomePage = () => {
                 From ₹499
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-T-3-Desktop-Kids-27Oct2022.jpg"
@@ -264,7 +264,7 @@ export const KidsHomePage = () => {
                 Under ₹399
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-T-4-Desktop-Kids-27Oct2022.jpg"
@@ -279,7 +279,7 @@ export const KidsHomePage = () => {
                 Under ₹399
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-T-5-Desktop-Kids-27Oct2022.jpg"
@@ -294,7 +294,7 @@ export const KidsHomePage = () => {
                 Under ₹699
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-T-6-Desktop-Kids-27Oct2022.jpg"
@@ -364,42 +364,42 @@ export const KidsHomePage = () => {
             templateColumns="repeat(6, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-S-1-Desktop-Kids-08June2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-S-2-Desktop-Kids-08June2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-S-3-Desktop-Kids-08June2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-S-4-Desktop-Kids-08June2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-S-5-Desktop-Kids-08June2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-S-6-Desktop-Kids-08June2022.jpg"
@@ -428,26 +428,26 @@ export const KidsHomePage = () => {
             Shop By Department
           </Heading>
         </Box>
-        <Box pb={"30px"} w={"1276px"}>
+        <Box pb={"30p x"} w={"1276px"}>
           <Grid
             templateColumns="repeat(3, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-modularblock-2-Banner-1-Kids-30Aug2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-modularblock-2-Banner-2-Kids-30Aug2022.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-modularblock-2-Banner-3-Kids-30Aug2022.jpg"
@@ -481,7 +481,7 @@ export const KidsHomePage = () => {
             templateColumns="repeat(6, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-E-1-Desktop-Kids-24Aug2022.jpg"
@@ -496,7 +496,7 @@ export const KidsHomePage = () => {
                 From ₹199
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-E-2-Desktop-Kids-24Aug2022.jpg"
@@ -511,7 +511,7 @@ export const KidsHomePage = () => {
                 From ₹350
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-E-3-Desktop-Kids-24Aug2022.jpg"
@@ -526,7 +526,7 @@ export const KidsHomePage = () => {
                 From ₹599
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-E-4-Desktop-Kids-24Aug2022.jpg"
@@ -541,7 +541,7 @@ export const KidsHomePage = () => {
                 From ₹299
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-E-5-Desktop-Kids-24Aug2022.jpg"
@@ -556,7 +556,7 @@ export const KidsHomePage = () => {
                 From ₹399
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-E-6-Desktop-Kids-30Aug2022.jpg"
@@ -571,7 +571,7 @@ export const KidsHomePage = () => {
                 From ₹499
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-E-7-Desktop-Kids-30Aug2022.jpg"
@@ -586,7 +586,7 @@ export const KidsHomePage = () => {
                 From ₹199
               </Heading>
             </Box>{" "}
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-E-8-Desktop-Kids-24Aug2022.jpg"
@@ -601,7 +601,7 @@ export const KidsHomePage = () => {
                 From ₹349
               </Heading>
             </Box>{" "}
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-E-9-Desktop-Kids-24Aug2022.jpg"
@@ -616,7 +616,7 @@ export const KidsHomePage = () => {
                 From ₹350
               </Heading>
             </Box>{" "}
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-E-10-Desktop-Kids-24Aug2022.jpg"
@@ -631,7 +631,7 @@ export const KidsHomePage = () => {
                 From ₹599
               </Heading>
             </Box>{" "}
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-E-11-Desktop-Kids-24Aug2022.jpg"
@@ -646,7 +646,7 @@ export const KidsHomePage = () => {
                 From ₹299
               </Heading>
             </Box>{" "}
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-E-12-Desktop-Kids-24Aug2022.jpg"
@@ -688,7 +688,7 @@ export const KidsHomePage = () => {
             templateColumns="repeat(6, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-V-1-Desktop-Kids-09Nov2022.jpg"
@@ -703,7 +703,7 @@ export const KidsHomePage = () => {
                 From ₹499
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-V-2-Desktop-Kids-09Nov2022.jpg"
@@ -718,7 +718,7 @@ export const KidsHomePage = () => {
                 From ₹599
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-V-3-Desktop-Kids-09Nov2022.jpg"
@@ -733,7 +733,7 @@ export const KidsHomePage = () => {
                 From ₹699
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-V-4-Desktop-Kids-09Nov2022.jpg"
@@ -748,7 +748,7 @@ export const KidsHomePage = () => {
                 From ₹499
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-V-5-Desktop-Kids-09Nov2022.jpg"
@@ -763,7 +763,7 @@ export const KidsHomePage = () => {
                 From ₹599
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-V-6-Desktop-Kids-09Nov2022.jpg"
@@ -805,7 +805,7 @@ export const KidsHomePage = () => {
             templateColumns="repeat(6, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-B-1-Desktop-Kids-18Oct2022.jpg"
@@ -820,7 +820,7 @@ export const KidsHomePage = () => {
                 Up To 50% Off
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-B-2-Desktop-Kids-18Oct2022.jpg"
@@ -835,7 +835,7 @@ export const KidsHomePage = () => {
                 Up To 50% Off
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-B-3-Desktop-Kids-04Nov2022.jpg"
@@ -850,7 +850,7 @@ export const KidsHomePage = () => {
                 Up To 50% Off
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-B-4-Desktop-Kids-04Nov2022.jpg"
@@ -865,7 +865,7 @@ export const KidsHomePage = () => {
                 Up To 50% Off
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-B-5-Desktop-Kids-18Oct2022.jpg"
@@ -880,7 +880,7 @@ export const KidsHomePage = () => {
                 Up To 50% Off
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-B-6-Desktop-Kids-18Oct2022.jpg"
@@ -922,7 +922,7 @@ export const KidsHomePage = () => {
             templateColumns="repeat(6, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-D-1-Desktop-Kids-18Oct2022.jpg"
@@ -937,7 +937,7 @@ export const KidsHomePage = () => {
                 Up To 50% Off
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-D-2-Desktop-Kids-18Oct2022.jpg"
@@ -952,7 +952,7 @@ export const KidsHomePage = () => {
                 Up To 50% Off
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-D-3-Desktop-Kids-18Oct2022.jpg"
@@ -967,7 +967,7 @@ export const KidsHomePage = () => {
                 Up To 50% Off
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-D-4-Desktop-Kids-18Oct2022.jpg"
@@ -982,7 +982,7 @@ export const KidsHomePage = () => {
                 Up To 50% Off
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-D-5-Desktop-Kids-04Nov2022.jpg"
@@ -997,7 +997,7 @@ export const KidsHomePage = () => {
                 Up To 50% Off
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-D-6-Desktop-Kids-18Oct2022.jpg"
@@ -1040,21 +1040,21 @@ export const KidsHomePage = () => {
             templateColumns="repeat(3, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-modularblock-3-Banner-1-Kids-03Aug2022.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-modularblock-3-Banner-2-Kids-03Aug2022.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-modularblock-3-Banner-3-Kids-03Aug2022.jpg"
@@ -1089,21 +1089,21 @@ export const KidsHomePage = () => {
             templateColumns="repeat(3, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={"100%"}
                 src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Kids-modularblock-one-img-26July2022.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={"100%"}
                 src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Kids-modularblock-two-img-26July2022.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={"100%"}
                 src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Kids-modularblock-three-img-08April2022.jpg"
@@ -1138,21 +1138,21 @@ export const KidsHomePage = () => {
             templateColumns="repeat(3, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-modularblock-6-Banner1-Kids-29July2022.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-modularblock-6-Banner2-Kids-29July2022.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-modularblock-6-Banner3-Kids-29July2022.jpg"
@@ -1187,21 +1187,21 @@ export const KidsHomePage = () => {
             templateColumns="repeat(3, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-modularblock-9-Banner1-Kids-22June2022.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-modularblock-9-Banner2-Kids-22June2022.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/kids/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-modularblock-9-Banner3-Kids-22June2022.jpg"
@@ -1223,7 +1223,7 @@ export const KidsHomePage = () => {
         >
           View All
         </Heading>
-        <Box p={"0 0 56px 0"} borderBottom={"1px solid #ecedeb"}>
+        <Box textDecoration={"none"} as={"a"} href="/kids/products" p={"0 0 56px 0"} borderBottom={"1px solid #ecedeb"}>
           <Image
             src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-modularblock7-Banner1-Kids-22June2022.jpg"
             alt=""
@@ -1249,21 +1249,21 @@ export const KidsHomePage = () => {
             templateColumns="repeat(3, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/womes/products"  pl={"8px"} pr={"8px"}>
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-MEN-6modularblock-oneBythree-A-Men-04March2022A.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box textDecoration={"none"} as={"a"} href="/mens/products"  pl={"8px"} pr={"8px"}>
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-modblock11-Banner2-Kids-04March2022A.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box  textDecoration={"none"} as={"a"} href="/shoes & bags/products" pl={"8px"} pr={"8px"}>
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-11modblock-oneBythree-C-Women-04March2022A.jpg"

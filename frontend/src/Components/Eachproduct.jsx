@@ -5,11 +5,12 @@ import { updateCart } from '../Redux/SingleProduct/action';
 import { json, useNavigate } from "react-router-dom"
 import SingleProduct from '../Pages/SingleProduct';
 
-const Eachproduct = ({item,id}) => {
+const Eachproduct = ({item,id,gender}) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
     const [btn,setBtn] = useState("btn");
     const handleClick=()=>{
+      localStorage.setItem("gender",JSON.stringify(gender))
       localStorage.setItem("data",JSON.stringify(item))
       navigate("/SingleProduct")
     }
@@ -17,6 +18,7 @@ const Eachproduct = ({item,id}) => {
       const arr = JSON.parse(localStorage.getItem("cart"))
       arr.push(item)
       localStorage.setItem("cart",JSON.stringify(arr))
+      
       navigate("/cart")
     }
     if(id%3==0){

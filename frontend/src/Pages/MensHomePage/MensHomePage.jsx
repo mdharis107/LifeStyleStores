@@ -7,9 +7,11 @@ import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { MenSlider } from "./MenSlider";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../../fw19_0144/component/navbar";
 
 export const MenHomePage = () => {
+  const navigate = useNavigate();
   const settings = {
     infinite: true,
     autoplay: true,
@@ -60,7 +62,10 @@ export const MenHomePage = () => {
 
       <Box p={"32px 0 0 0 "} w={"80%"} m={"auto"} h={50}>
         <Slider {...settings}>
-          <div
+          <Box
+            textDecoration={"none"}
+            as={"a"}
+            href="/mens/products"
             style={{
               backgroundColor: "#FFFFFF",
             }}
@@ -69,8 +74,11 @@ export const MenHomePage = () => {
               src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/HP_LS_Men_Desktop-1-09Nov2022.gif"
               alt=""
             />
-          </div>
-          <div
+          </Box>
+          <Box
+            textDecoration={"none"}
+            as={"a"}
+            href="/mens/products"
             style={{
               backgroundColor: "#FFFFFF",
             }}
@@ -79,8 +87,11 @@ export const MenHomePage = () => {
               src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/HP_LS_MEN_Desktop-2-07Nov2022.jpg"
               alt=""
             />
-          </div>
-          <div
+          </Box>
+          <Box
+            textDecoration={"none"}
+            as={"a"}
+            href="/mens/products"
             style={{
               backgroundColor: "#FFFFFF",
             }}
@@ -89,8 +100,11 @@ export const MenHomePage = () => {
               src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/HP_LS_MEN_Desktop-3-07Nov2022.jpg"
               alt=""
             />
-          </div>
-          <div
+          </Box>
+          <Box
+            textDecoration={"none"}
+            as={"a"}
+            href="/mens/products"
             style={{
               backgroundColor: "#FFFFFF",
             }}
@@ -99,8 +113,11 @@ export const MenHomePage = () => {
               src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/HP_LS_MEN_Desktop-4-07Nov2022.jpg"
               alt=""
             />
-          </div>
-          <div
+          </Box>
+          <Box
+            textDecoration={"none"}
+            as={"a"}
+            href="/mens/products"
             style={{
               backgroundColor: "#FFFFFF",
             }}
@@ -109,8 +126,11 @@ export const MenHomePage = () => {
               src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Banner5-desktop-MEN-07Nov2022.jpg"
               alt=""
             />
-          </div>
-          <div
+          </Box>
+          <Box
+            textDecoration={"none"}
+            as={"a"}
+            href="/mens/products"
             style={{
               backgroundColor: "#FFFFFF",
             }}
@@ -119,7 +139,7 @@ export const MenHomePage = () => {
               src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Banner6-desktop-MEN-07Nov2022.jpg"
               alt=""
             />
-          </div>
+          </Box>
         </Slider>
       </Box>
 
@@ -140,42 +160,78 @@ export const MenHomePage = () => {
             templateColumns="repeat(6, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC6-Banner4-men-Desktop-10Nov22.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC6-Banner1-men-Desktop-10Nov22.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC6-Banner2-men-Desktop-10Nov22.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC6-Banner3-men-Desktop-10Nov22.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC6-Banner5-men-Desktop-10Nov22.jpg"
                 alt=""
               />
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC6-Banner6-men-Desktop-10Nov22.jpg"
@@ -212,7 +268,13 @@ export const MenHomePage = () => {
             templateColumns="repeat(6, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC3-Men-banner1-11Oct2022.jpg"
@@ -227,7 +289,13 @@ export const MenHomePage = () => {
                 Up to 50% Off
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC3-Men-banner2-11Oct2022.jpg"
@@ -242,7 +310,13 @@ export const MenHomePage = () => {
                 Up to 50% Off
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC3-Men-banner3-10Nov2022.jpg"
@@ -257,7 +331,13 @@ export const MenHomePage = () => {
                 Up to 50% Off
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC3-Men-banner4-10Nov2022.jpg"
@@ -272,7 +352,13 @@ export const MenHomePage = () => {
                 Up to 50% Off
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC3-Men-banner5-11Oct2022.jpg"
@@ -287,7 +373,13 @@ export const MenHomePage = () => {
                 Under ₹3,999
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC3-Men-banner6-11Oct2022.jpg"
@@ -323,7 +415,13 @@ export const MenHomePage = () => {
             templateColumns="repeat(6, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC4-Men-banner1-08Nov2022.jpg"
@@ -338,7 +436,13 @@ export const MenHomePage = () => {
                 From ₹599
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC4-Men-banner2-08Nov2022.jpg"
@@ -353,7 +457,13 @@ export const MenHomePage = () => {
                 Under ₹1199
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC4-Men-banner3-08Nov2022.jpg"
@@ -368,7 +478,13 @@ export const MenHomePage = () => {
                 From ₹899
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC4-Men-banner4-08Nov2022.jpg"
@@ -383,7 +499,13 @@ export const MenHomePage = () => {
                 From ₹899
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC4-Men-banner5-08Nov2022.jpg"
@@ -398,7 +520,13 @@ export const MenHomePage = () => {
                 From ₹1999
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC4-Men-banner6-08Nov2022.jpg"
@@ -434,7 +562,13 @@ export const MenHomePage = () => {
             templateColumns="repeat(6, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner1-men-Desktop-19Oct2022.png"
@@ -444,7 +578,13 @@ export const MenHomePage = () => {
                 Upto 40% Off
               </Heading>
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner2-men-Desktop-02Sep2022.jpg"
@@ -454,7 +594,13 @@ export const MenHomePage = () => {
                 Upto 40% Off
               </Heading>
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner3-men-Desktop-02Sep2022.jpg"
@@ -464,7 +610,13 @@ export const MenHomePage = () => {
                 Upto 50% Off
               </Heading>
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner4-men-Desktop-31Aug2022.jpg"
@@ -474,7 +626,13 @@ export const MenHomePage = () => {
                 Upto 50% Off
               </Heading>
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner6-men-Desktop-31Aug2022.jpg"
@@ -484,7 +642,13 @@ export const MenHomePage = () => {
                 Upto 50% Off
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner5-men-Desktop-31Aug2022.jpg"
@@ -500,7 +664,13 @@ export const MenHomePage = () => {
               </Heading>
             </Box>
 
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner7-men-Desktop-16Sep2022.png"
@@ -510,7 +680,13 @@ export const MenHomePage = () => {
                 Upto 50% Off
               </Heading>
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner8-men-Desktop-16Sep2022.jpg"
@@ -520,7 +696,13 @@ export const MenHomePage = () => {
                 Upto 50% Off
               </Heading>
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner9-men-Desktop-16Sep2022.jpg"
@@ -530,7 +712,13 @@ export const MenHomePage = () => {
                 Upto 50% Off
               </Heading>
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner10-men-Desktop-16Sep2022.jpg"
@@ -540,7 +728,13 @@ export const MenHomePage = () => {
                 Upto 40% Off
               </Heading>
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner11-men-Desktop-23Sep2022.jpg"
@@ -550,7 +744,13 @@ export const MenHomePage = () => {
                 Flat 15% Off
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner12-men-Desktop-16Sep2022.jpg"
@@ -570,19 +770,37 @@ export const MenHomePage = () => {
       </Stack>
 
       <Stack m={"auto"} w={"80%"} pt={"45px"}>
-        <Box p={"50px 0 56px 0"} borderBottom={"1px solid #ecedeb"}>
+        <Box
+          textDecoration={"none"}
+          as={"a"}
+          href="/mens/products"
+          p={"50px 0 56px 0"}
+          borderBottom={"1px solid #ecedeb"}
+        >
           <Image
             src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-13modblock-oneBythree-A-menstripbanner-07Nov2022A.png"
             alt=""
           />
         </Box>
-        <Box p={"50px 0 56px 0"} borderBottom={"1px solid #ecedeb"}>
+        <Box
+          textDecoration={"none"}
+          as={"a"}
+          href="/mens/products"
+          p={"50px 0 56px 0"}
+          borderBottom={"1px solid #ecedeb"}
+        >
           <Image
             src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-men-9modblock-StripBanner2-D-07Nov2022.jpg"
             alt=""
           />
         </Box>
-        <Box p={"50px 0 56px 0"} borderBottom={"1px solid #ecedeb"}>
+        <Box
+          textDecoration={"none"}
+          as={"a"}
+          href="/mens/products"
+          p={"50px 0 56px 0"}
+          borderBottom={"1px solid #ecedeb"}
+        >
           <Image
             src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-men-8modblock-oneBythree-D-07Nov2022.jpg"
             alt=""
@@ -607,7 +825,13 @@ export const MenHomePage = () => {
             templateColumns="repeat(6, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-1-Desktop-Men-24Aug2022.jpg"
@@ -617,7 +841,13 @@ export const MenHomePage = () => {
                 From ₹299
               </Heading>
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-2-Desktop-Men-24Aug2022.jpg"
@@ -627,7 +857,13 @@ export const MenHomePage = () => {
                 From ₹699
               </Heading>
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-3-Desktop-Men-24Aug2022.jpg"
@@ -637,7 +873,13 @@ export const MenHomePage = () => {
                 From ₹699f
               </Heading>
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-4-Desktop-Men-24Aug2022.jpg"
@@ -647,7 +889,13 @@ export const MenHomePage = () => {
                 From ₹999
               </Heading>
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-5-Desktop-Men-24Aug2022.jpg"
@@ -657,7 +905,13 @@ export const MenHomePage = () => {
                 From ₹1495
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-6-Desktop-Men-24Aug2022.jpg"
@@ -673,7 +927,13 @@ export const MenHomePage = () => {
               </Heading>
             </Box>
 
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-7-Desktop-Men-24Aug2022.jpg"
@@ -683,7 +943,13 @@ export const MenHomePage = () => {
                 Upto 50% Off
               </Heading>
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-8-Desktop-Men-24Aug2022.jpg"
@@ -693,7 +959,13 @@ export const MenHomePage = () => {
                 From ₹599
               </Heading>
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-9-Desktop-Men-24Aug2022.jpg"
@@ -703,7 +975,13 @@ export const MenHomePage = () => {
                 From ₹599
               </Heading>
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-10-Desktop-Men-24Aug2022.jpg"
@@ -713,7 +991,13 @@ export const MenHomePage = () => {
                 From ₹199
               </Heading>
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-11-Desktop-Men-24Aug2022.jpg"
@@ -723,7 +1007,13 @@ export const MenHomePage = () => {
                 From ₹399
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-12-Desktop-Men-24Aug2022.jpg"
@@ -759,7 +1049,13 @@ export const MenHomePage = () => {
             templateColumns="repeat(6, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner1-22Oct2022.jpg"
@@ -769,7 +1065,13 @@ export const MenHomePage = () => {
                 Up To 50% Off
               </Heading>
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner2-22Oct2022.jpg"
@@ -779,7 +1081,13 @@ export const MenHomePage = () => {
                 Up To 50% Off
               </Heading>
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner3-22Oct2022.jpg"
@@ -789,7 +1097,13 @@ export const MenHomePage = () => {
                 Up To 30% Off
               </Heading>
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner4-22Oct2022.jpg"
@@ -809,7 +1123,13 @@ export const MenHomePage = () => {
                 Up To 50% Off
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner6-27Oct2022.jpg"
@@ -835,7 +1155,13 @@ export const MenHomePage = () => {
                 Upto 50% Off
               </Heading>
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner8-22Oct2022.jpg"
@@ -861,11 +1187,17 @@ export const MenHomePage = () => {
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner10-22Oct2022.jpg"
                 alt=""
               />
-              <Heading color={"#000000"} fontWeight={""} fontSize={"16px"}>
+              <Heading color={"#000000"} fontWeight={"600"} fontSize={"16px"}>
                 Up To 30% Off
               </Heading>
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner11-22Oct2022.jpg"
@@ -875,7 +1207,13 @@ export const MenHomePage = () => {
                 Up To 50% Off
               </Heading>
             </Box>
-            <Box textDecoration={"none"} as={"a"} href="" pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={200}
                 src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner12-22Oct2022.jpg"
@@ -912,7 +1250,7 @@ export const MenHomePage = () => {
             Flash Sale for Today
           </Heading>
         </Box>
-        <Box>
+        <Box textDecoration={"none"} as={"a"} href="/mens/products">
           <Image
             src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-LS-MEN-modularblock7-oneBythree-A-Men-04Nov2022.jpg"
             alt=""
@@ -943,21 +1281,39 @@ export const MenHomePage = () => {
             templateColumns="repeat(3, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-3modularblock-1-oneBythree-21June2022.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-3modularblock-2-oneBythree-21June2022.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-3modularblock-3-oneBythree-21June2022.jpg"
@@ -991,21 +1347,39 @@ export const MenHomePage = () => {
             templateColumns="repeat(3, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-MEN-11modularblock-oneBythree-A-Men-09Sep2022.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-MEN-11modularblock-oneBythree-B-Men-10Oct2022.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-MEN-11modularblock-oneBythree-C-Men-10Oct2022.jpg"
@@ -1039,21 +1413,39 @@ export const MenHomePage = () => {
             templateColumns="repeat(3, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-3modblck-1-oneBythreeA-07Sep2022.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-3modblck-2-oneBythreeA-24June20221.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-3modblck-3-oneBythreeA-24June2022.jpg"
@@ -1087,21 +1479,39 @@ export const MenHomePage = () => {
             templateColumns="repeat(3, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-4modularblock-1-oneBythree-24June2022.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-4modularblock-2-oneBythree-19July2022.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-4modularblock-3-oneBythree-24June2022.gif"
@@ -1135,21 +1545,39 @@ export const MenHomePage = () => {
             templateColumns="repeat(3, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-2modularblock-1-oneBythree-07Oct2022.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-2modularblock-2-oneBythree-16Sep2022.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-2modularblock-3-oneBythree-16Sep2022.jpg"
@@ -1178,26 +1606,50 @@ export const MenHomePage = () => {
             Active Wardrobe
           </Heading>
         </Box>
-        <Box pb={"25px"} w={"1276px"}>
+        <Box
+          textDecoration={"none"}
+          as={"a"}
+          href="/mens/products"
+          pb={"25px"}
+          w={"1276px"}
+        >
           <Grid
             templateColumns="repeat(3, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-15modularblock-1-oneBythree-16Sep2022.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-15modularblock-2-oneBythree-16Sep2022.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-15modularblock-3-oneBythree-16Sep2022.jpg"
@@ -1229,6 +1681,7 @@ export const MenHomePage = () => {
 
         <Box p={"32px 0 40px 0"}>
           <Button
+            onClick={() => navigate("/mens/products")}
             cursor={"pointer"}
             _hover={{ border: "1px solid #faa619" }}
             bg={"transparent"}
@@ -1261,14 +1714,26 @@ export const MenHomePage = () => {
             templateColumns="repeat(2, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=616,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-LS-MEN-5modularblock-oneBytwo1C-Men-14July2022.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=616,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-LS-MEN-5modularblock-oneBytwo1D-Men-14July2022.jpg"
@@ -1296,14 +1761,26 @@ export const MenHomePage = () => {
             templateColumns="repeat(2, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=616,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-LS-MEN-10modularblock-oneBythree-A-Men-12Sept2022.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/mens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=616,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-LS-MEN-10modularblock-oneBythree-B-Men-06Mar2022.jpg"
@@ -1331,21 +1808,39 @@ export const MenHomePage = () => {
             templateColumns="repeat(3, 1fr)"
             justifyContent={"space-evenly"}
           >
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/womens/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-MEN-6modularblock-oneBythree-A-Men-04March2022A.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/beautyproducts"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-11modblock-oneBythree-B-Women-12April2022.jpg"
                 alt=""
               />
             </Box>
-            <Box pl={"8px"} pr={"8px"}>
+            <Box
+              textDecoration={"none"}
+              as={"a"}
+              href="/shoes & bags/products"
+              pl={"8px"}
+              pr={"8px"}
+            >
               <Image
                 w={"100%"}
                 src="https://lmsin.net/cdn-cgi/image/w=500,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-11modblock-oneBythree-C-Women-04March2022A.jpg"

@@ -203,7 +203,7 @@ const MensProducts = () => {
       <div className="products">
           {
             products.map((item,index)=>(
-              <Eachproduct item={item} id={index} />
+              <Eachproduct item={item} id={index} gender={"mens"} />
             ))
           }
       </div>
