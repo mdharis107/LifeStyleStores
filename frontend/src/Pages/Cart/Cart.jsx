@@ -2,12 +2,14 @@ import React, {useState,useEffect} from 'react'
 import styles from "./Cart.module.css"
 import {Link} from "react-router-dom"
 import CartHelp from './CartHelp'
+
 const Cart = () => {
     const [ce,setC] = useState(0);
     const cartData = JSON.parse(localStorage.getItem("cart"))
     const handleC = ()=>{
         setC(ce+1);
     }
+    
   return (
     <>
     <div className={styles.navbar_cart}></div>   {/* import navbar at attch here */}
@@ -70,7 +72,7 @@ const Cart = () => {
                     <div>734</div>
                 </div>
                 <div className={styles.out_button}>
-                    <button><Link to="/Checkout.jsx">Checkout now</Link></button>
+                    <button><Link to="/checkout">Checkout now</Link></button>
                 </div>
                 <div className={styles.final_text}>Shipping charges might vary based on pincode delivery <br></br>location</div>
             </div>

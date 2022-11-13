@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from 'react'
 import "../Womens/WomensProducts.css";
-import Navbar from "../../Components/Navbar";
+import Navbar from "../../fw19_0144/component/navbar";
 import arrow from "../Womens/wpassert/arrow.png";
 import Eachproduct from '../../Components/Eachproduct';
 import axios from "axios"
@@ -73,7 +73,7 @@ const KidsProducts = () => {
       // ]
   return (
     <div className='wp'>
-      <Navbar/>
+      {/* <Navbar/> */}
       <div className='head'>
         <div>
           <div className="navroute">
