@@ -22,7 +22,7 @@ const Cart = () => {
     
   return (
     <>
-    <div className={styles.navbar_cart}></div>   {/* import navbar at attch here */}
+    {/* <div className={styles.navbar_cart}></div>   import navbar at attch here */}
 
     <div className={styles.basket_head}>
         <h1>Your Shopping Basket</h1>
