@@ -102,6 +102,9 @@ const handlesignout=()=>{
     onclose={onCloseModal}
 }
  const newname=localStorage.getItem("name")
+ const handleClickcart=()=>{
+  alert("Login First")
+ }
    
   return (
     <>
@@ -855,9 +858,9 @@ const handlesignout=()=>{
     ))}
       </Modal>
           <FiHeart size='25px'/>
-          <Link to='/cart'>
-          <BiShoppingBag size='25px'/>
-          </Link>
+          {auth?(<Link to='/cart'>
+         <BiShoppingBag size='25px'/>
+          </Link>):(<div onClick={handleClickcart}><BiShoppingBag size='25px'/></div>)}
           </Flex>
         </Flex>
       </Flex>
