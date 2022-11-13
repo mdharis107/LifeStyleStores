@@ -1,14 +1,25 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styles from "./Cart.module.css"
 import {Link} from "react-router-dom"
+import CartHelp from './CartHelp'
+
 const Cart = () => {
- 
+    const [ce,setC] = useState(0);
     const cartData = JSON.parse(localStorage.getItem("cart"))
+    const mrp = cartData.reduce(function (sum, item, index, arr) {
+        return sum + Number(item.price);
+      }, 0);
+    console.log(mrp)
+    const disc = cartData.reduce(function (sum, item, index, arr) {
+        return sum + Number(item.discount);
+      }, 0);
+    console.log(disc)
+    const total = mrp-disc
+    console.log(total)
+    const handleC = ()=>{
+        setC(ce+1);
+    }
     
-
-   
-
-
   return (
     <>
     <div className={styles.navbar_cart}></div>   {/* import navbar at attch here */}
@@ -17,34 +28,18 @@ const Cart = () => {
         <h1>Your Shopping Basket</h1>
         </div>
      {/* product count div */}
-     <div className={styles.product_count}><span>1</span><span>Product</span></div> 
+     <div className={styles.product_count}><span>{cartData.length} </span><span>Product</span></div> 
      {/* all cart functionality div starts   */}
      <div className={styles.cart_main}>
         {/* mapping of data starts here */}
-        {cartData.map(item => (
-        <div className={styles.items_div}>
-         <div className={styles.item_container}>
-          <div className={styles.item_img_main}>
-            <div className={styles.item_img_1}><img src={item.img} alt=''/></div>
-            <div>
-               <div className={styles.item_des} >{item.productName}</div>
-               <div className={styles.item_price}>{item.price}</div>
-               <div className={styles.item_size}>
-                <span>Colour: {item.colour}</span><br></br>
-                <span>Size: {item.size}</span>
-               </div>
-            </div>
-          </div>
-          <div className={styles.item_dilivery}>Delivery inEnter Pincode above</div>
-          <div className={styles.item_btn}>
-            <div><button>Remove</button></div>
-            <div><button>Move to favourites</button></div>
-          </div>
-         </div>
-         
         
-        </div>
+        <div className={styles.items_div}> 
+    {cartData.map((item) => (
+         <CartHelp item={item} handleC={()=>handleC()} />
+         
         ))}
+        </div>
+        
         {/* mapping of data ends here */}
         {/* pin check div start */}
         <div className={styles.price_main}>
@@ -72,22 +67,22 @@ const Cart = () => {
             <div className={styles.price_calc}>
                 <div className={styles.mrp_div}>
                     <div>Total MRP</div>
-                    <div>5999</div>
+                    <div className={styles.mrp_dy}>₹{mrp}</div>
                 </div>
                 <div className={styles.discount_div}>
                     <div>Offer discount</div>
-                    <div>-315</div>
+                    <div className={styles.green}>- ₹{disc}</div>
                 </div>
                 <div className={styles.charge_div}>
                     <div>Shipping charge</div>
-                    <div>Free</div>
+                    <div className={styles.free}>Free</div>
                 </div>
                 <div className={styles.total_div}>
                     <div>Total</div>
-                    <div>734</div>
+                    <div>₹{total}</div>
                 </div>
                 <div className={styles.out_button}>
-                    <button><Link to="/Checkout.jsx">Checkout now</Link></button>
+                    <button ><Link className={styles.btn_check} to="/checkout">Checkout now</Link></button>
                 </div>
                 <div className={styles.final_text}>Shipping charges might vary based on pincode delivery <br></br>location</div>
             </div>
